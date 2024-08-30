@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 //유니티를 활용해서 랜덤 아이템 획득 기능을 
 //연출해보도록 합시다.
 
