@@ -1,0 +1,4146 @@
+fileFormatVersion: 2
+guid: b60ce773d8037114fa0885ebb5cc21f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1044430600643958462
+    second: Slime 16x16 Walk_0
+  - first:
+      213: -1352785958168587662
+    second: Slime 16x16 Walk_1
+  - first:
+      213: -3262279258363673452
+    second: Slime 16x16 Walk_2
+  - first:
+      213: 8638542159359429125
+    second: Slime 16x16 Walk_3
+  - first:
+      213: 6110378005321000468
+    second: Slime 16x16 Walk_4
+  - first:
+      213: 7746700860816729421
+    second: Slime 16x16 Walk_5
+  - first:
+      213: 5961465347101205314
+    second: Slime 16x16 Walk_6
+  - first:
+      213: 6534950944076379031
+    second: Slime 16x16 Walk_7
+  - first:
+      213: -6566331460999338790
+    second: Slime 16x16 Walk_8
+  - first:
+      213: -5710113272339201898
+    second: Slime 16x16 Walk_9
+  - first:
+      213: -2403270818650940395
+    second: Slime 16x16 Walk_10
+  - first:
+      213: -5728595631892383267
+    second: Slime 16x16 Walk_11
+  - first:
+      213: 7045359307935225711
+    second: Slime 16x16 Walk_12
+  - first:
+      213: -4738898532337338319
+    second: Slime 16x16 Walk_13
+  - first:
+      213: -1114895179272206392
+    second: Slime 16x16 Walk_14
+  - first:
+      213: -9170025626729907995
+    second: Slime 16x16 Walk_15
+  - first:
+      213: -5500597135790265763
+    second: Slime 16x16 Walk_16
+  - first:
+      213: 7036924502838061997
+    second: Slime 16x16 Walk_17
+  - first:
+      213: -5016775446697442819
+    second: Slime 16x16 Walk_18
+  - first:
+      213: -5103466141105727671
+    second: Slime 16x16 Walk_19
+  - first:
+      213: -3844142788163897176
+    second: Slime 16x16 Walk_20
+  - first:
+      213: 5220530196135787329
+    second: Slime 16x16 Walk_21
+  - first:
+      213: 8881586413018875547
+    second: Slime 16x16 Walk_22
+  - first:
+      213: 7440530979489746338
+    second: Slime 16x16 Walk_23
+  - first:
+      213: 4110926786259234565
+    second: Slime 16x16 Walk_24
+  - first:
+      213: 5546095266623330187
+    second: Slime 16x16 Walk_25
+  - first:
+      213: -4723913088760175326
+    second: Slime 16x16 Walk_26
+  - first:
+      213: -7931123898668158751
+    second: Slime 16x16 Walk_27
+  - first:
+      213: -2201878193470951588
+    second: Slime 16x16 Walk_28
+  - first:
+      213: 8542255530342980797
+    second: Slime 16x16 Walk_29
+  - first:
+      213: -5442798272173159946
+    second: Slime 16x16 Walk_30
+  - first:
+      213: -8295512409660625099
+    second: Slime 16x16 Walk_31
+  - first:
+      213: 4055463153678958465
+    second: Slime 16x16 Walk_32
+  - first:
+      213: 8503053734098504955
+    second: Slime 16x16 Walk_33
+  - first:
+      213: -1874682045189485072
+    second: Slime 16x16 Walk_34
+  - first:
+      213: -9133633697376521801
+    second: Slime 16x16 Walk_35
+  - first:
+      213: -4034392245040536839
+    second: Slime 16x16 Walk_36
+  - first:
+      213: -5654690411891190814
+    second: Slime 16x16 Walk_37
+  - first:
+      213: -8025206953278462770
+    second: Slime 16x16 Walk_38
+  - first:
+      213: 1604362829648235487
+    second: Slime 16x16 Walk_39
+  - first:
+      213: 1245618819438554762
+    second: Slime 16x16 Walk_40
+  - first:
+      213: -6459725895464329918
+    second: Slime 16x16 Walk_41
+  - first:
+      213: -1898385174542245350
+    second: Slime 16x16 Walk_42
+  - first:
+      213: 8415456116221944883
+    second: Slime 16x16 Walk_43
+  - first:
+      213: -7376577659739173546
+    second: Slime 16x16 Walk_44
+  - first:
+      213: -2753412002488822746
+    second: Slime 16x16 Walk_45
+  - first:
+      213: 8036718123754948946
+    second: Slime 16x16 Walk_46
+  - first:
+      213: 7762388271948080660
+    second: Slime 16x16 Walk_47
+  - first:
+      213: 9222555247170771723
+    second: Slime 16x16 Walk_48
+  - first:
+      213: -1173079006101429610
+    second: Slime 16x16 Walk_49
+  - first:
+      213: 3862721604361372935
+    second: Slime 16x16 Walk_50
+  - first:
+      213: -3309289722945422373
+    second: Slime 16x16 Walk_51
+  - first:
+      213: -5330358687953777398
+    second: Slime 16x16 Walk_52
+  - first:
+      213: -6582565266350459590
+    second: Slime 16x16 Walk_53
+  - first:
+      213: -8270569736821818601
+    second: Slime 16x16 Walk_54
+  - first:
+      213: -5982267305100459321
+    second: Slime 16x16 Walk_55
+  - first:
+      213: 407787402452137473
+    second: Slime 16x16 Walk_56
+  - first:
+      213: 4855531613692467379
+    second: Slime 16x16 Walk_57
+  - first:
+      213: 2159359561371970032
+    second: Slime 16x16 Walk_58
+  - first:
+      213: -5317618842397257390
+    second: Slime 16x16 Walk_59
+  - first:
+      213: 7304086525763858761
+    second: Slime 16x16 Walk_60
+  - first:
+      213: 2699261446490516921
+    second: Slime 16x16 Walk_61
+  - first:
+      213: 3921978757460856754
+    second: Slime 16x16 Walk_62
+  - first:
+      213: -5332355670496304147
+    second: Slime 16x16 Walk_63
+  - first:
+      213: 4332420442921603270
+    second: Slime 16x16 Walk_64
+  - first:
+      213: 7070589145086396323
+    second: Slime 16x16 Walk_65
+  - first:
+      213: -1330870416700291787
+    second: Slime 16x16 Walk_66
+  - first:
+      213: 8049732350219225252
+    second: Slime 16x16 Walk_67
+  - first:
+      213: -6426186096744931276
+    second: Slime 16x16 Walk_68
+  - first:
+      213: 8140119329826335580
+    second: Slime 16x16 Walk_69
+  - first:
+      213: 2878383298605526115
+    second: Slime 16x16 Walk_70
+  - first:
+      213: 3274352224376705632
+    second: Slime 16x16 Walk_71
+  - first:
+      213: -9176498607846476951
+    second: Slime 16x16 Walk_72
+  - first:
+      213: -6858773183288056719
+    second: Slime 16x16 Walk_73
+  - first:
+      213: 1058987684571018227
+    second: Slime 16x16 Walk_74
+  - first:
+      213: -5174734912462577801
+    second: Slime 16x16 Walk_75
+  - first:
+      213: -3337821470800056972
+    second: Slime 16x16 Walk_76
+  - first:
+      213: 5287373465649293975
+    second: Slime 16x16 Walk_77
+  - first:
+      213: -3217152088526017762
+    second: Slime 16x16 Walk_78
+  - first:
+      213: -5771646738866473429
+    second: Slime 16x16 Walk_79
+  - first:
+      213: 6903861036107542881
+    second: Slime 16x16 Walk_80
+  - first:
+      213: 7578416095371770630
+    second: Slime 16x16 Walk_81
+  - first:
+      213: 48377563546646872
+    second: Slime 16x16 Walk_82
+  - first:
+      213: -5988120728060919339
+    second: Slime 16x16 Walk_83
+  - first:
+      213: 5934645268440278720
+    second: Slime 16x16 Walk_84
+  - first:
+      213: -4569037823248235299
+    second: Slime 16x16 Walk_85
+  - first:
+      213: 9123996495165807909
+    second: Slime 16x16 Walk_86
+  - first:
+      213: 6107863673257704836
+    second: Slime 16x16 Walk_87
+  - first:
+      213: 4660206302379166530
+    second: Slime 16x16 Walk_88
+  - first:
+      213: -6385787587584367103
+    second: Slime 16x16 Walk_89
+  - first:
+      213: -7836833088620077931
+    second: Slime 16x16 Walk_90
+  - first:
+      213: 6505019515220201819
+    second: Slime 16x16 Walk_91
+  - first:
+      213: 1434633466754894898
+    second: Slime 16x16 Walk_92
+  - first:
+      213: -2826481751027307020
+    second: Slime 16x16 Walk_93
+  - first:
+      213: -3059417275602614452
+    second: Slime 16x16 Walk_94
+  - first:
+      213: -6203480933588323961
+    second: Slime 16x16 Walk_95
+  - first:
+      213: -3815159479955580852
+    second: Slime 16x16 Walk_96
+  - first:
+      213: 4562578096721133935
+    second: Slime 16x16 Walk_97
+  - first:
+      213: 7825568833382378378
+    second: Slime 16x16 Walk_98
+  - first:
+      213: 2648325504500332525
+    second: Slime 16x16 Walk_99
+  - first:
+      213: -7610890472260524435
+    second: Slime 16x16 Walk_100
+  - first:
+      213: -2060627492996062387
+    second: Slime 16x16 Walk_101
+  - first:
+      213: 3617469256242232661
+    second: Slime 16x16 Walk_102
+  - first:
+      213: 6309180716362922740
+    second: Slime 16x16 Walk_103
+  - first:
+      213: -9123495458529664889
+    second: Slime 16x16 Walk_104
+  - first:
+      213: -6619271076281047158
+    second: Slime 16x16 Walk_105
+  - first:
+      213: -5627612703655631946
+    second: Slime 16x16 Walk_106
+  - first:
+      213: -2115432808897389411
+    second: Slime 16x16 Walk_107
+  - first:
+      213: -657267508636325212
+    second: Slime 16x16 Walk_108
+  - first:
+      213: -794660995913427759
+    second: Slime 16x16 Walk_109
+  - first:
+      213: 258769378090381695
+    second: Slime 16x16 Walk_110
+  - first:
+      213: -5687999870654857575
+    second: Slime 16x16 Walk_111
+  - first:
+      213: -4669517959788004380
+    second: Slime 16x16 Walk_112
+  - first:
+      213: -2357006354142918746
+    second: Slime 16x16 Walk_113
+  - first:
+      213: -8356911062747571584
+    second: Slime 16x16 Walk_114
+  - first:
+      213: -4927067684319720030
+    second: Slime 16x16 Walk_115
+  - first:
+      213: 8226623463491812105
+    second: Slime 16x16 Walk_116
+  - first:
+      213: -7518393453406183781
+    second: Slime 16x16 Walk_117
+  - first:
+      213: -8623028168751774523
+    second: Slime 16x16 Walk_118
+  - first:
+      213: -7154152113289106168
+    second: Slime 16x16 Walk_119
+  - first:
+      213: -1573139175523048845
+    second: Slime 16x16 Walk_120
+  - first:
+      213: -6279362833756546642
+    second: Slime 16x16 Walk_121
+  - first:
+      213: 8620546700591225733
+    second: Slime 16x16 Walk_122
+  - first:
+      213: 1006302606172788585
+    second: Slime 16x16 Walk_123
+  - first:
+      213: 1993364333633585935
+    second: Slime 16x16 Walk_124
+  - first:
+      213: -4804559654900050727
+    second: Slime 16x16 Walk_125
+  - first:
+      213: 833870031361944902
+    second: Slime 16x16 Walk_126
+  - first:
+      213: -387496793028314146
+    second: Slime 16x16 Walk_127
+  - first:
+      213: 4612024509413345388
+    second: Slime 16x16 Walk_128
+  - first:
+      213: 2576334037419015456
+    second: Slime 16x16 Walk_129
+  - first:
+      213: 1366382677486228094
+    second: Slime 16x16 Walk_130
+  - first:
+      213: -8286769413084685025
+    second: Slime 16x16 Walk_131
+  - first:
+      213: 4717891899375438869
+    second: Slime 16x16 Walk_132
+  - first:
+      213: -1074868928628614241
+    second: Slime 16x16 Walk_133
+  - first:
+      213: -1320737779892837848
+    second: Slime 16x16 Walk_134
+  - first:
+      213: -971617782826640759
+    second: Slime 16x16 Walk_135
+  - first:
+      213: -8502680559952295204
+    second: Slime 16x16 Walk_136
+  - first:
+      213: -8705113904639890111
+    second: Slime 16x16 Walk_137
+  - first:
+      213: -783834421818292145
+    second: Slime 16x16 Walk_138
+  - first:
+      213: -5429677754382464718
+    second: Slime 16x16 Walk_139
+  - first:
+      213: 2760212936087561072
+    second: Slime 16x16 Walk_140
+  - first:
+      213: 4041757148917245180
+    second: Slime 16x16 Walk_141
+  - first:
+      213: 844996418369654695
+    second: Slime 16x16 Walk_142
+  - first:
+      213: 72247748390437211
+    second: Slime 16x16 Walk_143
+  - first:
+      213: 771360648183839070
+    second: Slime 16x16 Walk_144
+  - first:
+      213: -8764086414319266231
+    second: Slime 16x16 Walk_145
+  - first:
+      213: 2863913471235108507
+    second: Slime 16x16 Walk_146
+  - first:
+      213: 6472392288821086049
+    second: Slime 16x16 Walk_147
+  - first:
+      213: -1949854176817748467
+    second: Slime 16x16 Walk_148
+  - first:
+      213: 5008992161191540286
+    second: Slime 16x16 Walk_149
+  - first:
+      213: -6338492131006940098
+    second: Slime 16x16 Walk_150
+  - first:
+      213: -1928412429701830001
+    second: Slime 16x16 Walk_151
+  - first:
+      213: 831042759335541100
+    second: Slime 16x16 Walk_152
+  - first:
+      213: -1057720860646041280
+    second: Slime 16x16 Walk_153
+  - first:
+      213: 1503893451419434022
+    second: Slime 16x16 Walk_154
+  - first:
+      213: -1190873638189486026
+    second: Slime 16x16 Walk_155
+  - first:
+      213: 4814940116488451207
+    second: Slime 16x16 Walk_156
+  - first:
+      213: 2133710215979993794
+    second: Slime 16x16 Walk_157
+  - first:
+      213: -3692848836202403563
+    second: Slime 16x16 Walk_158
+  - first:
+      213: 325370861239284299
+    second: Slime 16x16 Walk_159
+  - first:
+      213: 6053106863471794972
+    second: Slime 16x16 Walk_160
+  - first:
+      213: -8534549152107968228
+    second: Slime 16x16 Walk_161
+  - first:
+      213: 8847173025348303809
+    second: Slime 16x16 Walk_162
+  - first:
+      213: -7176395576623719822
+    second: Slime 16x16 Walk_163
+  - first:
+      213: 7847872106047429070
+    second: Slime 16x16 Walk_164
+  - first:
+      213: 5986365686732954159
+    second: Slime 16x16 Walk_165
+  - first:
+      213: 3046516288432130376
+    second: Slime 16x16 Walk_166
+  - first:
+      213: -6395746609683581421
+    second: Slime 16x16 Walk_167
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 385
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 249a11007ef6181f0800000000000000
+      internalID: -1044430600643958462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 385
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2729932a650f93de0800000000000000
+      internalID: -1352785958168587662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 385
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 494cb1f7c4e0ab2d0800000000000000
+      internalID: -3262279258363673452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 388
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50acad1335442e770800000000000000
+      internalID: 8638542159359429125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 396
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416a482fb6c6cc450800000000000000
+      internalID: 6110378005321000468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_5
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 391
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d45a13e936fc18b60800000000000000
+      internalID: 7746700860816729421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_6
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 385
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243a4c2e5216bb250800000000000000
+      internalID: 5961465347101205314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 385
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 793b64e824fc0ba50800000000000000
+      internalID: 6534950944076379031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_8
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 385
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4a9ad7354bfd4a0800000000000000
+      internalID: -6566331460999338790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_9
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 385
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6908af67b3a91c0b0800000000000000
+      internalID: -5710113272339201898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_10
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 388
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c9f3b6cedd5aed0800000000000000
+      internalID: -2403270818650940395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_11
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 385
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd9333bcf90ff70b0800000000000000
+      internalID: -5728595631892383267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_12
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 385
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f67987076f426c160800000000000000
+      internalID: 7045359307935225711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_13
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 364
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138b96184ec0c3eb0800000000000000
+      internalID: -4738898532337338319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_14
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 359
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c74fadcdb81780f0800000000000000
+      internalID: -1114895179272206392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_15
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 353
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8f88107468db080800000000000000
+      internalID: -9170025626729907995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 353
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5aa0b46c04f9a3b0800000000000000
+      internalID: -5500597135790265763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_17
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 353
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daba7e65d8d28a160800000000000000
+      internalID: 7036924502838061997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_18
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 353
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df182bdaf45d06ab0800000000000000
+      internalID: -5016775446697442819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_19
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 356
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947d8208598dc29b0800000000000000
+      internalID: -5103466141105727671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_20
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 364
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a87c95508cd6aac0800000000000000
+      internalID: -3844142788163897176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_21
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 359
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14bbfd7cd8c037840800000000000000
+      internalID: 5220530196135787329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_22
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 353
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b960de539cbb14b70800000000000000
+      internalID: 8881586413018875547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_23
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 353
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad86c41183124760800000000000000
+      internalID: 7440530979489746338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_24
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 353
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fae98a122fc0930800000000000000
+      internalID: 4110926786259234565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_25
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 353
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b871f81b240b7fc40800000000000000
+      internalID: 5546095266623330187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_26
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 321
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225a1aaf21a417eb0800000000000000
+      internalID: -4723913088760175326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_27
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 324
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0f546c5dcfee190800000000000000
+      internalID: -7931123898668158751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_28
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 332
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f2c77f27b5171e0800000000000000
+      internalID: -2201878193470951588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_29
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 327
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc95b265203c8670800000000000000
+      internalID: 8542255530342980797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_30
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 321
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f942030fcb4774b0800000000000000
+      internalID: -5442798272173159946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_31
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 321
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f65583a6b60ec80800000000000000
+      internalID: -8295512409660625099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_32
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 321
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f38b26046e74830800000000000000
+      internalID: 4055463153678958465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_33
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 321
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc000fe15ae00670800000000000000
+      internalID: 8503053734098504955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_34
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 324
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fd8da5cc9acbf5e0800000000000000
+      internalID: -1874682045189485072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_35
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 332
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1b5575b80de3180800000000000000
+      internalID: -9133633697376521801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_36
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 327
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f2a4c5d0a5f208c0800000000000000
+      internalID: -4034392245040536839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_37
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 321
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e31b6cb7018681b0800000000000000
+      internalID: -5654690411891190814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_38
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 321
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4a7dc9bccb0a090800000000000000
+      internalID: -8025206953278462770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_39
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 289
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdb06084e77d34610800000000000000
+      internalID: 1604362829648235487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_40
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 289
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e2d2a77b3594110800000000000000
+      internalID: 1245618819438554762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_41
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 289
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24dd47ee5817a56a0800000000000000
+      internalID: -6459725895464329918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_42
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 289
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a12aa88edb497a5e0800000000000000
+      internalID: -1898385174542245350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_43
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 292
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3342c4e20c4b9c470800000000000000
+      internalID: 8415456116221944883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_44
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 300
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d0a2583b121a990800000000000000
+      internalID: -7376577659739173546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_45
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 295
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6245b573f5ae9c9d0800000000000000
+      internalID: -2753412002488822746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_46
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 289
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2598b5e9d88288f60800000000000000
+      internalID: 8036718123754948946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_47
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 289
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416af16a10b89bb60800000000000000
+      internalID: 7762388271948080660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_48
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 289
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b570552291dff70800000000000000
+      internalID: 9222555247170771723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_49
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 289
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6922bd3fbd268bfe0800000000000000
+      internalID: -1173079006101429610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_50
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 289
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705cf2665d42b9530800000000000000
+      internalID: 3862721604361372935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_51
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 289
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbbcf4c78a0312d0800000000000000
+      internalID: -3309289722945422373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_52
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 260
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d0917c303c606b0800000000000000
+      internalID: -5330358687953777398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_53
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 268
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a353b5424c706a4a0800000000000000
+      internalID: -6582565266350459590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_54
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 263
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71bb3aac4a8093d80800000000000000
+      internalID: -8270569736821818601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_55
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 257
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2cd08d497bafca0800000000000000
+      internalID: -5982267305100459321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_56
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 257
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 106f9036b70c8a500800000000000000
+      internalID: 407787402452137473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_57
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 257
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b891d5e640526340800000000000000
+      internalID: 4855531613692467379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_58
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 257
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f96bed841697fd10800000000000000
+      internalID: 2159359561371970032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_59
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 260
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251dcf736d50436b0800000000000000
+      internalID: -5317618842397257390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_60
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 268
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9413fd81ff35d5560800000000000000
+      internalID: 7304086525763858761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_61
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 263
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd69f9fbf3b57520800000000000000
+      internalID: 2699261446490516921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_62
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 257
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf051f76eaad6630800000000000000
+      internalID: 3921978757460856754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_63
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 257
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3270c05caaff5b0800000000000000
+      internalID: -5332355670496304147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_64
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 257
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c09bfd4079df1c30800000000000000
+      internalID: 4332420442921603270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_65
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 225
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a78b99ad57cf1260800000000000000
+      internalID: 7070589145086396323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_66
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 225
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535c082486cc78de0800000000000000
+      internalID: -1330870416700291787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_67
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 228
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a889c75ce466bf60800000000000000
+      internalID: 8049732350219225252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_68
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 236
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 430e6fadac991d6a0800000000000000
+      internalID: -6426186096744931276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_69
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 231
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5be69bf66387f070800000000000000
+      internalID: 8140119329826335580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_70
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 225
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36cacc81c5212f720800000000000000
+      internalID: 2878383298605526115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_71
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 225
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 062db73fff5d07d20800000000000000
+      internalID: 3274352224376705632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_72
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 225
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963b175a22786a080800000000000000
+      internalID: -9176498607846476951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_73
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 225
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174e32f012eb0d0a0800000000000000
+      internalID: -6858773183288056719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_74
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 228
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f37e5830b742be00800000000000000
+      internalID: 1058987684571018227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_75
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 236
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f1bd79306af28b0800000000000000
+      internalID: -5174734912462577801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_76
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 225
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d6a4d8e0dada1d0800000000000000
+      internalID: -3337821470800056972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_77
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 225
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a2ade3726806940800000000000000
+      internalID: 5287373465649293975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_78
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 199
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b200f78316a53d0800000000000000
+      internalID: -3217152088526017762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_79
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 193
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2672d8deddf6efa0800000000000000
+      internalID: -5771646738866473429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_80
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 193
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161b9dbb8017fcf50800000000000000
+      internalID: 6903861036107542881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_81
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 193
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60bbcbc5941fb2960800000000000000
+      internalID: 7578416095371770630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_82
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 193
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859fb42432fdba000800000000000000
+      internalID: 48377563546646872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_83
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 196
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d186cb9cebe5eca0800000000000000
+      internalID: -5988120728060919339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_84
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 204
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6e555bd681c5250800000000000000
+      internalID: 5934645268440278720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_85
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 199
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd407fbbe448790c0800000000000000
+      internalID: -4569037823248235299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_86
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 193
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d544aa872fe9e70800000000000000
+      internalID: 9123996495165807909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_87
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 193
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48db90566ad73c450800000000000000
+      internalID: 6107863673257704836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_88
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 193
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24bc851f0f06ca040800000000000000
+      internalID: 4660206302379166530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_89
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 193
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1066feeb5002167a0800000000000000
+      internalID: -6385787587584367103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_90
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 193
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59cd5c4c3d9fd3390800000000000000
+      internalID: -7836833088620077931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_91
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 161
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b511fa5b8c8764a50800000000000000
+      internalID: 6505019515220201819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_92
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 164
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c00d87987d8e310800000000000000
+      internalID: 1434633466754894898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_93
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 172
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fda4e1a2d156c8d0800000000000000
+      internalID: -2826481751027307020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_94
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 167
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4743048234ca85d0800000000000000
+      internalID: -3059417275602614452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_95
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 161
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7813f8655fec8e9a0800000000000000
+      internalID: -6203480933588323961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_96
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 161
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4898c3aaa4dd0bc0800000000000000
+      internalID: -3815159479955580852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_97
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 161
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f618a0bfa98815f30800000000000000
+      internalID: 4562578096721133935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_98
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 161
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bef1f64610a9c60800000000000000
+      internalID: 7825568833382378378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_99
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 164
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de77951d30eb0c420800000000000000
+      internalID: 2648325504500332525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_100
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 172
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66a180907fa06690800000000000000
+      internalID: -7610890472260524435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_101
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 167
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43e099763e2763e0800000000000000
+      internalID: -2060627492996062387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_102
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 161
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55df6345f15d33230800000000000000
+      internalID: 3617469256242232661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_103
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 161
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa7e8e1f66be8750800000000000000
+      internalID: 6309180716362922740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_104
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 129
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78023740835d26180800000000000000
+      internalID: -9123495458529664889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_105
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 129
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87204ac600a324a0800000000000000
+      internalID: -6619271076281047158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_106
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 129
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b36129ff04b6e1b0800000000000000
+      internalID: -5627612703655631946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_107
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 132
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9cd67f711974a2e0800000000000000
+      internalID: -2115432808897389411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_108
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 140
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aa6359eeaae0e6f0800000000000000
+      internalID: -657267508636325212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_109
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 135
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4d8b5d80cc8f4f0800000000000000
+      internalID: -794660995913427759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_110
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 129
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7173dbd065579300800000000000000
+      internalID: 258769378090381695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_111
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 129
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e3623014a2011b0800000000000000
+      internalID: -5687999870654857575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_112
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 129
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb778ed72a823fb0800000000000000
+      internalID: -4669517959788004380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_113
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 129
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a709f7753b3a4fd0800000000000000
+      internalID: -2357006354142918746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_114
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 132
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a166d4aa9460c80800000000000000
+      internalID: -8356911062747571584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_115
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 129
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad01dbbb0a8f9bb0800000000000000
+      internalID: -4927067684319720030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_116
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 129
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bb25a1476da2270800000000000000
+      internalID: 8226623463491812105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_117
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 108
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9e1a100dfc49a790800000000000000
+      internalID: -7518393453406183781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_118
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 103
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c40d593199d45880800000000000000
+      internalID: -8623028168751774523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_119
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 97
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80dea4aae8857bc90800000000000000
+      internalID: -7154152113289106168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_120
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 97
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372a2b431461b2ae0800000000000000
+      internalID: -1573139175523048845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_121
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 97
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9962ea5c83bd8a0800000000000000
+      internalID: -6279362833756546642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_122
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 97
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bd762fc8552a770800000000000000
+      internalID: 8620546700591225733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_123
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 100
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9679a7183ea17fd00800000000000000
+      internalID: 1006302606172788585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_124
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 108
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03c926dc4ad9ab10800000000000000
+      internalID: 1993364333633585935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_125
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 103
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d452831376c25db0800000000000000
+      internalID: -4804559654900050727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_126
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 97
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64d2c202060829b00800000000000000
+      internalID: 833870031361944902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_127
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 97
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edbb1f348b55f9af0800000000000000
+      internalID: -387496793028314146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_128
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 97
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c684af21bd3310040800000000000000
+      internalID: 4612024509413345388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_129
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 97
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02dbb13382af0c320800000000000000
+      internalID: 2576334037419015456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_130
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 65
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7250d64ecd56f210800000000000000
+      internalID: 1366382677486228094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_131
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 68
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1dd38dbf1b7ffc80800000000000000
+      internalID: -8286769413084685025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_132
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 76
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51c47fe9fa1597140800000000000000
+      internalID: 4717891899375438869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_133
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 71
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b9cf0876c4511f0800000000000000
+      internalID: -1074868928628614241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_134
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 65
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 822ac0c9cfbcbade0800000000000000
+      internalID: -1320737779892837848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_135
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 65
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a5a2d36ce1482f0800000000000000
+      internalID: -971617782826640759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_136
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 65
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda8c617419600a80800000000000000
+      internalID: -8502680559952295204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_137
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 65
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d20a08609313780800000000000000
+      internalID: -8705113904639890111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_138
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 68
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f480ccc0fb24f15f0800000000000000
+      internalID: -783834421818292145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_139
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 76
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 239413d99d8e5a4b0800000000000000
+      internalID: -5429677754382464718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_140
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 71
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073efe78a0f3e4620800000000000000
+      internalID: 2760212936087561072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_141
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 65
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf4ab9976b4371830800000000000000
+      internalID: 4041757148917245180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_142
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 65
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af8669f3c70abb00800000000000000
+      internalID: 844996418369654695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_143
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 33
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5142a2c1fca00100800000000000000
+      internalID: 72247748390437211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_144
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 33
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5976b43c6c64ba00800000000000000
+      internalID: 771360648183839070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_145
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 33
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9465cad17d5bf5680800000000000000
+      internalID: -8764086414319266231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_146
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 33
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9eac60e02aaeb720800000000000000
+      internalID: 2863913471235108507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_147
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 36
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16788269e7e82d950800000000000000
+      internalID: 6472392288821086049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_148
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 44
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0667faf4f9b0f4e0800000000000000
+      internalID: -1949854176817748467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_149
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 39
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36b982f4d3838540800000000000000
+      internalID: 5008992161191540286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_150
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 33
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3cf8b75df62908a0800000000000000
+      internalID: -6338492131006940098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_151
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 33
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8aac23cc17ec35e0800000000000000
+      internalID: -1928412429701830001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_152
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 33
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69fa5f8cf4788b00800000000000000
+      internalID: 831042759335541100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_153
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 33
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0491ca53b783251f0800000000000000
+      internalID: -1057720860646041280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_154
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 33
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62c34e74027eed410800000000000000
+      internalID: 1503893451419434022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_155
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 33
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630b65f4cba297fe0800000000000000
+      internalID: -1190873638189486026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_156
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 4
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784721a768a12d240800000000000000
+      internalID: 4814940116488451207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_157
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 12
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ca0c15f2267c9d10800000000000000
+      internalID: 2133710215979993794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_158
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 7
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519e0fc8c8d50ccc0800000000000000
+      internalID: -3692848836202403563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_159
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b423e6c0313f38400800000000000000
+      internalID: 325370861239284299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_160
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b17b02f94f00450800000000000000
+      internalID: 6053106863471794972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_161
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 1
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c194e7e93c03f8980800000000000000
+      internalID: -8534549152107968228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_162
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cbbd420ef877ca70800000000000000
+      internalID: 8847173025348303809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_163
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 4
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a98a7ce32586c90800000000000000
+      internalID: -7176395576623719822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_164
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 12
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec957a3c91e39ec60800000000000000
+      internalID: 7847872106047429070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_165
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 7
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a1e4dffd7d31350800000000000000
+      internalID: 5986365686732954159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_166
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84940765c66674a20800000000000000
+      internalID: 3046516288432130376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slime 16x16 Walk_167
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316b668385ebd37a0800000000000000
+      internalID: -6395746609683581421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
