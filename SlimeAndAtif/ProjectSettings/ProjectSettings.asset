@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 27
-  productGUID: 22e28f2f13b3c4d4e93ff049e84cb6ff
+  productGUID: 62c5af822fb8f6b42b8989c06a79bc37
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: SlimeAndArty
+  productName: SlimeAndAtif
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -160,7 +160,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.SlimeAndArty
+    Standalone: com.DefaultCompany.SlimeAndAtif
   buildNumber:
     Bratwurst: 0
     Standalone: 0
@@ -604,14 +604,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: SlimeAndArty
+  metroPackageName: SlimeAndAtif
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: SlimeAndArty
+  metroApplicationDescription: SlimeAndAtif
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -681,10 +681,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: fd8da6d1-3ae9-4363-b250-d712c5a758ff
+  cloudProjectId: 943257d0-967a-4708-862e-be858b52556a
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: SlimeAndArty
+  projectName: SlimeAndAtif
   organizationId: dudwls9515
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
