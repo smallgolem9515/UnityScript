@@ -49,7 +49,7 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
                     ""name"": ""GunMove"",
                     ""type"": ""Value"",
                     ""id"": ""805613d3-ec5c-47b1-afcc-81c8db5fc08e"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Touch"",
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
