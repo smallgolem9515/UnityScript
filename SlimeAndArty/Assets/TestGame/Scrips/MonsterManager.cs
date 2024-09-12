@@ -25,8 +25,13 @@ public class MonsterManager : MonoBehaviour
         {
             WidthMove();
         }
-        else if (moveList == 2) 
+        else if (moveList == 2)
         {
+            LengthMove();
+        }
+        else if (moveList == 3)
+        {
+            WidthMove();
             LengthMove();
         }
         

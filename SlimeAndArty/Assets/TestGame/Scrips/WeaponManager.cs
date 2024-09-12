@@ -48,7 +48,7 @@ public class WeaponManager : MonoBehaviour
         if(!isFire)
         {
             timer += Time.deltaTime;
-            Debug.Log(timer);
+            
 
             if(timer > delayTime)
             {

@@ -53,6 +53,15 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""f40e38bf-f039-4417-9ee2-7bc39e152a0c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -132,6 +141,17 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
                     ""action"": ""GunMove"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""251dce26-593a-4df5-a97e-a56a8d4c390e"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -160,6 +180,7 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Click = m_Player.FindAction("Click", throwIfNotFound: true);
         m_Player_GunMove = m_Player.FindAction("GunMove", throwIfNotFound: true);
+        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -224,6 +245,7 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Click;
     private readonly InputAction m_Player_GunMove;
+    private readonly InputAction m_Player_Jump;
     public struct PlayerActions
     {
         private @PlayerControlers m_Wrapper;
@@ -231,6 +253,7 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Click => m_Wrapper.m_Player_Click;
         public InputAction @GunMove => m_Wrapper.m_Player_GunMove;
+        public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -249,6 +272,9 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
             @GunMove.started += instance.OnGunMove;
             @GunMove.performed += instance.OnGunMove;
             @GunMove.canceled += instance.OnGunMove;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -262,6 +288,9 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
             @GunMove.started -= instance.OnGunMove;
             @GunMove.performed -= instance.OnGunMove;
             @GunMove.canceled -= instance.OnGunMove;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -293,5 +322,6 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnClick(InputAction.CallbackContext context);
         void OnGunMove(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
     }
 }
