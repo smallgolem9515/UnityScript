@@ -21,7 +21,8 @@ public class Clearmanager : MonoBehaviour
             clearPoint.SetActive(true);
             clearSource.Play();
             Invoke("ReStart", 2f);
-            playerManager.Respon();
+            playerManager.Respon(playerManager.defaultObj);
+            playerManager.isCheck = false;
         }
     }
     void ReStart()

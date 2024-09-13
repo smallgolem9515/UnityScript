@@ -3,33 +3,37 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerManager : PlayerActive
 {
     Vector3 moveDirection; //벡터3 정의
-    AudioSource audioSource;
+    
     Rigidbody2D rig2D;
     float speed = 3.0f;
+    public List<AudioClip> audioClip;
     public GameObject defaultObj;
+    public GameObject secondObj;
     public GameObject gameOver;
+    protected AudioSource audioSource;
     public BoxCollider2D boxCollider;
     public Color collsionColor = Color.red;
     public Vector2 boxClliderSize;
     public float jumpHeight;
     public bool isjump;
     Camera mainCam;
-    [Header("오디오 클립")]
-    public List<AudioClip> audioClip;
+    public bool isCheck = false;
     private bool isGrounded = false;
-    public Transform groundCheck;
+    public Transform groundCheck; //충돌할 위치
+
     public float groundRound = 0.1f;
     public LayerMask groundMask; //레이어마스크는 레이어의 정보를 담고있는 구조체
+    PlayerActive PlayerActive;
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
         boxCollider = GetComponent<BoxCollider2D>();
         rig2D = GetComponent<Rigidbody2D>();
         mainCam = Camera.main;
+        audioSource = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -44,11 +48,8 @@ public class PlayerManager : MonoBehaviour
             //transform.localScale = new Vector3(-5, 5, 0);
         }
         transform.Translate(new Vector3(Mathf.Abs(moveDirection.x),moveDirection.y,0)*Time.deltaTime*speed);
-        //Mathf.Abs는 넣은 float값의 절대값을 return한다.
-        //Vector3(x,y,z)에 계산식을 넣을시 각 좌표에 다 넣어진다.
-        //Debug.Log(moveDirection.x);
-        //각 키를 누를시 약0.7에서 1까지의 값이 넣어진다. 거기에 3.0*프레임을 넣은값이 곱해져서 속도가 나온다.
-        mainCam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+
+        //mainCam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRound, groundMask);
         if (isGrounded)
         {
@@ -81,13 +82,7 @@ public class PlayerManager : MonoBehaviour
             moveDirection = new Vector3(input.x, input.y, 0); // 무브디렉션에 눌렀을때의 x,y좌표를 보내준다.
         }
     }
-    public void OnDead()
-    {
-        audioSource.PlayOneShot(audioClip[0]);
-        Respon();
-        gameOver.SetActive(true);
-        Invoke("RectiveateGameOver", 0.3f);
-    }
+
     void OnJump()
     {
         if(isGrounded)
@@ -111,7 +106,7 @@ public class PlayerManager : MonoBehaviour
         {
             isjump = true;
         }
-        if(collision.gameObject.CompareTag("DieZone"))
+        if (collision.gameObject.CompareTag("DieZone") || collision.gameObject.CompareTag("Spike"))
         {
             OnDead();
         }
@@ -119,33 +114,48 @@ public class PlayerManager : MonoBehaviour
         {
             OnDead();
         }
-        //if (collision.gameObject.tag == "Monster"
-        //    || collision.gameObject.tag == "Spike")
-        //{
-        //diyingAudioSource.Play();
-        //Respon();
-        //gameOver.SetActive(true);
-        //Invoke("RectiveateGameOver", 0.3f);
-        //}
+        if(collision.gameObject.name == "Check")
+        {
+            isCheck = true;
+        }
         Debug.Log("OnTriggerEnter2D" + collision.gameObject.name);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.layer == 6)
+        
+        if(collision.gameObject.layer == groundMask)
         {
-            //jumpCount = 2;
+            transform.SetParent(collision.transform);
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        //jumpCount--;
+        if (collision.gameObject.layer == groundMask)
+        {
+            transform.SetParent(null);
+        }
     }
-    public void Respon()
+    public virtual void OnDead()
     {
-        transform.position = defaultObj.transform.position;
+        if(isCheck)
+        {
+            Respon(secondObj);
+        }
+        else
+        {
+            Respon(defaultObj);
+        }
+        audioSource.PlayOneShot(audioClip[0]);      
+        gameOver.SetActive(true);
+        Invoke("RectiveateGameOver", 0.3f);
+    }
+    public void Respon(GameObject obj)
+    {
+        transform.position = obj.transform.position;
     }
     void RectiveateGameOver()
     {
         gameOver.SetActive(false);
     }
+
 }

@@ -8,6 +8,7 @@ public class PlayerManagerSlime : MonoBehaviour
     public GameObject bulletObj;
     Vector3 vec3;
     public Transform bulletPos;
+    public int count = 6;
     void Start()
     {
         
@@ -18,11 +19,11 @@ public class PlayerManagerSlime : MonoBehaviour
     {
         if (vec3.x > 0)
         {
-            transform.localScale = new Vector3(10, 10, 10);
+            transform.localScale = new Vector3(7, 7, 7);
         }
         else if (vec3.x < 0)
         {
-            transform.localScale = new Vector3(-10, 10, 10);
+            transform.localScale = new Vector3(-7, 7, 7);
         }
         transform.Translate(vec3 * playerSpeed*Time.deltaTime);
     }
@@ -37,6 +38,11 @@ public class PlayerManagerSlime : MonoBehaviour
     }
     void OnFire()
     {
-        Instantiate(bulletObj, bulletPos.transform.position,Quaternion.identity);
+        if(count > 0)
+        {
+            Instantiate(bulletObj, bulletPos.transform.position, Quaternion.identity);
+            count--;
+        }
+        
     }
 }

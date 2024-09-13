@@ -19,7 +19,7 @@ public class Itemmanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isRunning)
+        if(!isRunning)
         {
             timer += Time.deltaTime;
             if (timer > timerLimit)
@@ -29,7 +29,7 @@ public class Itemmanager : MonoBehaviour
                 isRunning = true;
                 timer = 0;
             }
-
+            
         }
     }
 
@@ -38,5 +38,9 @@ public class Itemmanager : MonoBehaviour
         spriteRenderer.enabled = false;
         boxCollider.enabled = false;
         isRunning = false;
+    }
+    void Respon()
+    {
+        gameObject.SetActive(true);
     }
 }

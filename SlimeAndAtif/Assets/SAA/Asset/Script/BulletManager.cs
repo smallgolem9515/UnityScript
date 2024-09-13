@@ -30,5 +30,16 @@ public class BulletManager : MonoBehaviour
         //    rig2D.AddForce(new Vector2(-bulSpeed, 0), ForceMode2D.Impulse);
         //}
     }
+    private void Update()
+    {
+        Destroy(gameObject, 5f);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag != "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
 
 }
