@@ -650,8 +650,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d785cda91435094b8b089632a407376, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 0
   bulletObj: {fileID: 4733359239025585082, guid: 5180e9b0163f52c4cbb0520e43975307, type: 3}
   bulletPos: {fileID: 722029437}
+  count: 6
 --- !u!114 &950262426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,7 +756,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &986412909
 GameObject:
   m_ObjectHideFlags: 0

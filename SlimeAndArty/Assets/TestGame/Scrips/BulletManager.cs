@@ -8,10 +8,12 @@ public class BulletManager : MonoBehaviour
     Camera maincamera;
     Vector3 mouseFos;
     Rigidbody2D rid2D;
+    WeaponManager weaponManager;
     float bulletSpeed = 30f;
     void Start()
     {
         rid2D = GetComponent<Rigidbody2D>();
+        weaponManager = FindObjectOfType<WeaponManager>();
 
         maincamera = Camera.main;
         
@@ -27,10 +29,11 @@ public class BulletManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag != "Player"
-            && collision.gameObject.tag != "Spike")
+        if(collision.tag != "Player"
+            && collision.tag != "Spike")
         {
-            Destroy(gameObject);
+            weaponManager.ReturnBulletToPool(gameObject);
+            //Destroy(gameObject);
         }
         //gameObject.SetActive(false); //오브젝트 활성화 및 비활성화
         

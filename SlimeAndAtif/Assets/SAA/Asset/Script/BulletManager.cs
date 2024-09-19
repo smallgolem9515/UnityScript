@@ -9,10 +9,12 @@ public class BulletManager : MonoBehaviour
     PlayerManagerSlime slime;
     Vector3 mousePoint;
     Camera cam;
+    BoxCollider2D boxCollider2D;
     void Start()
     {
         rig2D = GetComponent<Rigidbody2D>();
         slime = FindObjectOfType<PlayerManagerSlime>();
+        boxCollider2D = GetComponent<BoxCollider2D>();
         cam = Camera.main;
         mousePoint = cam.ScreenToWorldPoint(Input.mousePosition);
         Vector3 diretion = mousePoint - transform.position;
@@ -32,13 +34,31 @@ public class BulletManager : MonoBehaviour
     }
     private void Update()
     {
-        Destroy(gameObject, 5f);
+        
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag != "Player")
+        boxCollider2D.isTrigger = false;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (gameObject.tag == "Bullet")
         {
-            Destroy(gameObject);
+            if (collision.gameObject.tag == "Monster")
+            {
+                Destroy(gameObject);
+            }
+            else if (collision.gameObject.tag != "Player")
+            {
+                gameObject.tag = "Jelly";
+            }
+        }
+        else
+        {
+            if (collision.gameObject.tag == "Player")
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

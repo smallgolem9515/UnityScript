@@ -7,10 +7,38 @@ public class BlockManager : MonoBehaviour
     public int blocknumber;
     float timer;
     PlayerManager playermanager;
+
+
+    public List<GameObject> blocks;
+    public float scrollSpeed = 2f;
+    float blockScailx;
+    float blockPosiy;
+    
     private void Start()
     {
         playermanager = FindObjectOfType<PlayerManager>();
         timer = 0;
+        blockScailx = blocks[0].transform.localScale.x;
+        blockPosiy = blocks[0].transform.position.y;
+        for (int i = 0; i < blocks.Count; i++)
+        {
+            blocks[i].transform.position = new Vector3(i * blockScailx+20, blockPosiy+Random.Range(0,5), blocks[i].transform.position.z);
+        }
+    }
+    private void Update()
+    {
+        if(blocknumber == 4)
+        {
+            for (int i = 0; i < blocks.Count; i++)
+            {
+                blocks[i].transform.Translate(Vector3.left*scrollSpeed*Time.deltaTime);
+                if (blocks[i].transform.position.x <= blockScailx)
+                {
+                    blocks[i].transform.position =
+                    new Vector3(blocks[i].transform.position.x * blockScailx+20, blockPosiy * Random.Range(0,5), blocks[i].transform.position.z);
+                }
+            }
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

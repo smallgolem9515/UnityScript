@@ -18,16 +18,23 @@ public class WeaponManager : MonoBehaviour
     private float timer = 0; // 시간저장변수
     private float delayTime = 0.3f;
 
+    public int poolSize = 100; //오브젝트 풀링 사이즈
+    private List<GameObject> bulletPool; //오브젝트 풀 리스트
+
     AudioSource bulletSound; //발사음
     
-
     void Start()
     {
         bulletSound = GetComponent<AudioSource>(); 
         mainCamera = Camera.main; // 메인카메라 넣어주기
-        
+        bulletPool = new List<GameObject>();
+        for(int i = 0; i <  poolSize;i++)
+        {
+            GameObject bullet = Instantiate(bulletObj);
+            bullet.SetActive(false);
+            bulletPool.Add(bullet);
+        }
     }
-
     void Update()
     {
         mousepos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -44,28 +51,53 @@ public class WeaponManager : MonoBehaviour
         //{
         //    transform.rotation = Quaternion.Euler(0, 0, -rotationZ);
         //}
-
         if(!isFire)
         {
             timer += Time.deltaTime;
-            
-
             if(timer > delayTime)
             {
                 isFire = true;
                 timer = 0;
             }
+        }        
+    }
+    //풀에서 비활성화된 총알을 가져오는 함수
+    GameObject GetBulletFromPool()
+    {
+        foreach(GameObject bullet in bulletPool)
+        {
+            if(!bullet.activeInHierarchy)
+            {
+                return bullet;
+            }
         }
-        
+        //풀에 사용할 수 있는 총알이 없으면 Null 반환
+        return null;
     }
     void OnClick()
     {
         if(isFire)
         {
+            GameObject bullet = GetBulletFromPool();
+            if(bullet != null)
+            {
+                bullet.transform.position = bulletPos.position;
+                bullet.transform.rotation = bulletPos.rotation;
+                bullet.SetActive(true);
+
+                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+                Vector2 direction = (mousepos - transform.position).normalized;
+                rb.velocity = direction * 100;
+            }
             isFire = false;
             bulletSound.Play();
-            Instantiate(bulletObj, bulletPos.transform.position, Quaternion.identity);
-        }
-        
+            //Instantiate(bulletObj, bulletPos.transform.position, Quaternion.identity);
+        }       
+    }
+    public void ReturnBulletToPool(GameObject bullet)
+    {
+        bullet.SetActive(false);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> ();
+        rb.velocity = Vector2.zero;
     }
 }

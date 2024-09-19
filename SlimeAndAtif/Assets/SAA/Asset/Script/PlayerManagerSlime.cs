@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerManagerSlime : MonoBehaviour
 {
+    public int hp;
     float playerSpeed = 5.0f;
     public GameObject bulletObj;
     Vector3 vec3;
@@ -43,6 +44,22 @@ public class PlayerManagerSlime : MonoBehaviour
             Instantiate(bulletObj, bulletPos.transform.position, Quaternion.identity);
             count--;
         }
-        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Monster")
+        {
+            hp--;
+            if(collision.gameObject.layer == 6)
+            {
+                hp++;
+                count += 3;
+            }
+        }
+        else if (collision.gameObject.tag == "Jelly")
+        {
+            count++;
+        }
     }
 }
