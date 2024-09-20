@@ -24,8 +24,9 @@ public class Itemmanager : MonoBehaviour
             timer += Time.deltaTime;
             if (timer > timerLimit)
             {
-                spriteRenderer.enabled = true;
-                boxCollider.enabled = true;
+                //spriteRenderer.enabled = true;
+                //boxCollider.enabled = true;
+                Respon();
                 isRunning = true;
                 timer = 0;
             }
@@ -35,8 +36,9 @@ public class Itemmanager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        spriteRenderer.enabled = false;
-        boxCollider.enabled = false;
+        //spriteRenderer.enabled = false;
+        //boxCollider.enabled = false;
+        gameObject.SetActive(false);
         isRunning = false;
     }
     void Respon()

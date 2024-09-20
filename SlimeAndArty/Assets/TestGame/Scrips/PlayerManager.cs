@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,28 +6,34 @@ using UnityEngine.InputSystem;
 
 public class PlayerManager : PlayerActive
 {
-    Vector3 moveDirection; //벡터3 정의
-    
+    [Header("외부참조")]
+    public GameObject defaultObj; //리스폰장소
+    public GameObject secondObj; //체크포인트후 리스폰
+    public GameObject gameOver; // 게임오버화면
+    public List<AudioClip> audioClip; //소리모음집
+    [Header("컴포넌트")]
     Rigidbody2D rig2D;
-    float speed = 3.0f;
-    public List<AudioClip> audioClip;
-    public GameObject defaultObj;
-    public GameObject secondObj;
-    public GameObject gameOver;
-    protected AudioSource audioSource;
-    public BoxCollider2D boxCollider;
-    public Color collsionColor = Color.red;
-    public Vector2 boxClliderSize;
-    public float jumpHeight;
-    public bool isjump;
     Camera mainCam;
-    public bool isCheck = false;
-    private bool isGrounded = false;
-    public Transform groundCheck; //충돌할 위치
-
-    public float groundRound = 0.1f;
+    protected AudioSource audioSource;
+    BoxCollider2D boxCollider;
+    Animator animator;
+    [Header("움직임")]
+    Vector3 moveDirection; //OnMove의 값을 저장할 벡터3
+    float speed = 3.0f; //움직이는 속도
+    public float jumpHeight; //점프높이
+    public bool isjump; //더블점프체크
+    [Header("기즈모")]
+    public Color collsionColor = Color.red; //기즈모색
+    public Vector2 boxClliderSize; //콜라이더의 크기
+    [Header("그라운드체크")]
+    public bool isCheck = false; //체크포인트 참조
+    private bool isGrounded = false; //땅체크
+    public Transform groundCheck; //체크할 위치
+    public float groundRound = 0.1f; //체크한위치에서 충돌판정할 원의 사이즈
     public LayerMask groundMask; //레이어마스크는 레이어의 정보를 담고있는 구조체
-    PlayerActive PlayerActive;
+    [Header("기타")]
+    bool isDamage; //데미지체크
+    float timer = 0; //시간재기
 
     private void Start()
     {
@@ -34,9 +41,25 @@ public class PlayerManager : PlayerActive
         rig2D = GetComponent<Rigidbody2D>();
         mainCam = Camera.main;
         audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
     private void Update()
     {
+        //float inputX = Input.GetAxis("Horizontal");
+        //float inputY = Input.GetAxis("Vartical");
+
+        float mag = new Vector2(moveDirection.x, moveDirection.y).magnitude;
+        animator.SetFloat("Run", mag);
+        Debug.Log(mag);
+        if (isDamage)
+        {
+            timer += Time.deltaTime;
+            if (timer > 0.5f)
+            {
+                isDamage = false;
+                timer = 0;
+            }
+        }
         if (moveDirection.x > 0) //눌렀을때 x좌표가 0보다 크다면
         {
             transform.localEulerAngles = new Vector3(0, 0, 0); // 로테이션의 y값을 변경
@@ -55,7 +78,7 @@ public class PlayerManager : PlayerActive
         {
             isjump = true;
         }
-        
+       
     }
     private void OnDrawGizmos()
     {
@@ -85,16 +108,19 @@ public class PlayerManager : PlayerActive
 
     void OnJump()
     {
+        
         if(isGrounded)
         {
             rig2D.velocity = new Vector2(rig2D.velocity.x, jumpHeight);
             audioSource.PlayOneShot(audioClip[1]);
+            animator.SetTrigger("isJump");
         }
         else if(isjump)
         {
             rig2D.velocity = new Vector2(rig2D.velocity.x, jumpHeight);
             audioSource.PlayOneShot(audioClip[2]);
             isjump = false;
+            animator.SetTrigger("isJump");
         }
             //rig2D.AddForceY(jumpHeight, ForceMode2D.Impulse);
     }
@@ -112,7 +138,14 @@ public class PlayerManager : PlayerActive
         }
         if (collision.gameObject.tag == "Monster")
         {
-            OnDead();
+            
+            if(isDamage == false)
+            {
+                animator.SetTrigger("Damage");
+                isDamage = true;
+                OnDead();
+            }
+            
         }
         if(collision.gameObject.name == "Check")
         {

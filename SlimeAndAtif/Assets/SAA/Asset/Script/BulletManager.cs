@@ -10,6 +10,7 @@ public class BulletManager : MonoBehaviour
     Vector3 mousePoint;
     Camera cam;
     BoxCollider2D boxCollider2D;
+    float timer = 0;
     void Start()
     {
         rig2D = GetComponent<Rigidbody2D>();
@@ -34,6 +35,14 @@ public class BulletManager : MonoBehaviour
     }
     private void Update()
     {
+        if(!PlayerManagerSlime.instance.isFire)
+        {
+            timer += Time.deltaTime;
+            if (timer > 1f)
+            {
+                boxCollider2D.isTrigger = false;
+            }
+        }
         
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -55,8 +64,10 @@ public class BulletManager : MonoBehaviour
         }
         else
         {
+            rig2D.velocity = new Vector2(0, 0);
             if (collision.gameObject.tag == "Player")
             {
+                PlayerManagerSlime.instance.count += 1;
                 Destroy(gameObject);
             }
         }

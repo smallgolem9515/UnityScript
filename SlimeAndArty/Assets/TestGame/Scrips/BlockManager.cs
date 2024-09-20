@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BlockManager : MonoBehaviour
@@ -8,7 +9,8 @@ public class BlockManager : MonoBehaviour
     float timer;
     PlayerManager playermanager;
 
-
+    public int blocksSize = 10;
+    public GameObject blockObj;
     public List<GameObject> blocks;
     public float scrollSpeed = 2f;
     float blockScailx;
@@ -18,11 +20,18 @@ public class BlockManager : MonoBehaviour
     {
         playermanager = FindObjectOfType<PlayerManager>();
         timer = 0;
+        
+        for(int i = 0; i < blocksSize;i++)
+        {
+            GameObject obj = Instantiate(blockObj);
+            obj.SetActive(false);
+            blocks[i] = obj;
+        }
         blockScailx = blocks[0].transform.localScale.x;
         blockPosiy = blocks[0].transform.position.y;
         for (int i = 0; i < blocks.Count; i++)
         {
-            blocks[i].transform.position = new Vector3(i * blockScailx+20, blockPosiy+Random.Range(0,5), blocks[i].transform.position.z);
+            blocks[i].transform.position = new Vector3(0,0, 0);
         }
     }
     private void Update()
@@ -35,8 +44,18 @@ public class BlockManager : MonoBehaviour
                 if (blocks[i].transform.position.x <= blockScailx)
                 {
                     blocks[i].transform.position =
-                    new Vector3(blocks[i].transform.position.x * blockScailx+20, blockPosiy * Random.Range(0,5), blocks[i].transform.position.z);
+                    new Vector3(blocks[i].transform.position.x * blockScailx+20, blockPosiy + Random.Range(0,5), blocks[i].transform.position.z);
                 }
+            }
+        }
+    }
+    void ObjectByFool()
+    {
+        for (int i = 0; i < blocks.Count; i++)
+        {
+            if (!blocks[i].activeInHierarchy)
+            {
+                blocks[i].transform.position = new Vector3(0, 0, 0);
             }
         }
     }

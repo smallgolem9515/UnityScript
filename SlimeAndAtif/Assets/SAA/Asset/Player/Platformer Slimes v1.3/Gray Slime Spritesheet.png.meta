@@ -1,0 +1,1698 @@
+fileFormatVersion: 2
+guid: 64dfb61ae5872dd4fa0c0d9a954727eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3955967470351669055
+    second: Gray Slime Spritesheet_0
+  - first:
+      213: -2995838427143436813
+    second: Gray Slime Spritesheet_1
+  - first:
+      213: 4659914828576385450
+    second: Gray Slime Spritesheet_2
+  - first:
+      213: -4450670150615078821
+    second: Gray Slime Spritesheet_3
+  - first:
+      213: 5551932255658496837
+    second: Gray Slime Spritesheet_4
+  - first:
+      213: -1777152422969361910
+    second: Gray Slime Spritesheet_5
+  - first:
+      213: 1586943497725210141
+    second: Gray Slime Spritesheet_6
+  - first:
+      213: -1804609714576626127
+    second: Gray Slime Spritesheet_7
+  - first:
+      213: 8495890199138343105
+    second: Gray Slime Spritesheet_8
+  - first:
+      213: -6077322610842832603
+    second: Gray Slime Spritesheet_9
+  - first:
+      213: 5309117811776590011
+    second: Gray Slime Spritesheet_10
+  - first:
+      213: -3673370751165836080
+    second: Gray Slime Spritesheet_11
+  - first:
+      213: -9205297462728511377
+    second: Gray Slime Spritesheet_12
+  - first:
+      213: -9064225349182926229
+    second: Gray Slime Spritesheet_13
+  - first:
+      213: -2751085700640862762
+    second: Gray Slime Spritesheet_14
+  - first:
+      213: -8046134469770602951
+    second: Gray Slime Spritesheet_15
+  - first:
+      213: -1727092838808237540
+    second: Gray Slime Spritesheet_16
+  - first:
+      213: -2563182062573884777
+    second: Gray Slime Spritesheet_17
+  - first:
+      213: 456192844091588600
+    second: Gray Slime Spritesheet_18
+  - first:
+      213: 2808516877420660116
+    second: Gray Slime Spritesheet_19
+  - first:
+      213: -8363177004719979820
+    second: Gray Slime Spritesheet_20
+  - first:
+      213: -2848957979373822212
+    second: Gray Slime Spritesheet_21
+  - first:
+      213: 7478913066878820525
+    second: Gray Slime Spritesheet_22
+  - first:
+      213: -1872583253328955204
+    second: Gray Slime Spritesheet_23
+  - first:
+      213: 1811302479110210639
+    second: Gray Slime Spritesheet_24
+  - first:
+      213: -4952161568635961699
+    second: Gray Slime Spritesheet_25
+  - first:
+      213: 6135984158397111582
+    second: Gray Slime Spritesheet_26
+  - first:
+      213: 5406849294889947000
+    second: Gray Slime Spritesheet_27
+  - first:
+      213: 5679457470775480523
+    second: Gray Slime Spritesheet_28
+  - first:
+      213: 4188701347820273264
+    second: Gray Slime Spritesheet_29
+  - first:
+      213: -3781269373249988139
+    second: Gray Slime Spritesheet_30
+  - first:
+      213: -5864280161694804199
+    second: Gray Slime Spritesheet_31
+  - first:
+      213: 5795065106480146615
+    second: Gray Slime Spritesheet_32
+  - first:
+      213: -9142118761405428914
+    second: Gray Slime Spritesheet_33
+  - first:
+      213: 2652575418661614240
+    second: Gray Slime Spritesheet_34
+  - first:
+      213: -6584213993346392055
+    second: Gray Slime Spritesheet_35
+  - first:
+      213: -7017193182293521425
+    second: Gray Slime Spritesheet_36
+  - first:
+      213: 3107069822834433917
+    second: Gray Slime Spritesheet_37
+  - first:
+      213: 8915389178783069050
+    second: Gray Slime Spritesheet_38
+  - first:
+      213: -9064741386307103920
+    second: Gray Slime Spritesheet_39
+  - first:
+      213: 760335688210661056
+    second: Gray Slime Spritesheet_40
+  - first:
+      213: -6859377277791027029
+    second: Gray Slime Spritesheet_41
+  - first:
+      213: 3178187587155604486
+    second: Gray Slime Spritesheet_42
+  - first:
+      213: -5385983802872317030
+    second: Gray Slime Spritesheet_43
+  - first:
+      213: -1454105938715361593
+    second: Gray Slime Spritesheet_44
+  - first:
+      213: 4732706172994701074
+    second: Gray Slime Spritesheet_45
+  - first:
+      213: 8885389367326585248
+    second: Gray Slime Spritesheet_46
+  - first:
+      213: -1171268063866256714
+    second: Gray Slime Spritesheet_47
+  - first:
+      213: -3985041746258862451
+    second: Gray Slime Spritesheet_48
+  - first:
+      213: -4226606195890203066
+    second: Gray Slime Spritesheet_49
+  - first:
+      213: -4736734031075409921
+    second: Gray Slime Spritesheet_50
+  - first:
+      213: -1103198008159215570
+    second: Gray Slime Spritesheet_51
+  - first:
+      213: -4060380482489584935
+    second: Gray Slime Spritesheet_52
+  - first:
+      213: 916392488461416827
+    second: Gray Slime Spritesheet_53
+  - first:
+      213: 1725949093218077902
+    second: Gray Slime Spritesheet_54
+  - first:
+      213: 2872418278282249939
+    second: Gray Slime Spritesheet_55
+  - first:
+      213: -1154693093323819270
+    second: Gray Slime Spritesheet_56
+  - first:
+      213: 5363826398954535926
+    second: Gray Slime Spritesheet_57
+  - first:
+      213: 4954158590154145898
+    second: Gray Slime Spritesheet_58
+  - first:
+      213: -6456510552234279743
+    second: Gray Slime Spritesheet_59
+  - first:
+      213: 6327552953119672837
+    second: Gray Slime Spritesheet_60
+  - first:
+      213: 4102366683779950855
+    second: Gray Slime Spritesheet_61
+  - first:
+      213: -6076854884425125531
+    second: Gray Slime Spritesheet_62
+  - first:
+      213: -2881285054760361472
+    second: Gray Slime Spritesheet_63
+  - first:
+      213: 6437301004322498699
+    second: Gray Slime Spritesheet_64
+  - first:
+      213: 6878656671727832463
+    second: Gray Slime Spritesheet_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 113
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37df45647b66e630800000000000000
+      internalID: 3955967470351669055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 113
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f586a9b2d4ac66d0800000000000000
+      internalID: -2995838427143436813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 113
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9eed8e8d75ba040800000000000000
+      internalID: 4659914828576385450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 113
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b586724241b0c32c0800000000000000
+      internalID: -4450670150615078821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 111
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 543de8b98fc6c0d40800000000000000
+      internalID: 5551932255658496837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0abf2d79494657e0800000000000000
+      internalID: -1777152422969361910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 111
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ee68404b4f50610800000000000000
+      internalID: 1586943497725210141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 111
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13ee07c960db4f6e0800000000000000
+      internalID: -1804609714576626127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 111
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c81d5a7f1777e570800000000000000
+      internalID: 8495890199138343105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 97
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5217343d84309aba0800000000000000
+      internalID: -6077322610842832603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 97
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb094a95586cda940800000000000000
+      internalID: 5309117811776590011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 97
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d45370a3c0950dc0800000000000000
+      internalID: -3673370751165836080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 97
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60334abab6304080800000000000000
+      internalID: -9205297462728511377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 95
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b625cd9b117653280800000000000000
+      internalID: -9064225349182926229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 95
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd05a2912e22d9d0800000000000000
+      internalID: -2751085700640862762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 95
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9361c4a7453665090800000000000000
+      internalID: -8046134469770602951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1ac6b0b6322808e0800000000000000
+      internalID: -1727092838808237540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 95
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a61a19e7fbd6cd0800000000000000
+      internalID: -2563182062573884777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 95
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff772589f8b45600800000000000000
+      internalID: 456192844091588600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 95
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4950958483bd9f620800000000000000
+      internalID: 2808516877420660116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d243fff2d600fb80800000000000000
+      internalID: -8363177004719979820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe986befc77678d0800000000000000
+      internalID: -2848957979373822212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0e6513fcf6ac760800000000000000
+      internalID: 7478913066878820525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb87bf4d37f3306e0800000000000000
+      internalID: -1872583253328955204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f440620120a032910800000000000000
+      internalID: 1811302479110210639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ebc1f7a43664bb0800000000000000
+      internalID: -4952161568635961699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d1fac0515672550800000000000000
+      internalID: 6135984158397111582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 79
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f8cf779ccf80b40800000000000000
+      internalID: 5406849294889947000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 79
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0d2868a7c71de40800000000000000
+      internalID: 5679457470775480523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 79
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ef603eea1412a30800000000000000
+      internalID: 4188701347820273264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 79
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9de5ff98b368bc0800000000000000
+      internalID: -3781269373249988139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 79
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9179fc26344ed9ea0800000000000000
+      internalID: -5864280161694804199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b8a202c2053c6050800000000000000
+      internalID: 5795065106480146615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bcefb6c6ba02180800000000000000
+      internalID: -9142118761405428914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a232411a47dfc420800000000000000
+      internalID: 2652575418661614240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900ae69f14c20a4a0800000000000000
+      internalID: -6584213993346392055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb0a19bafbed9e90800000000000000
+      internalID: -7017193182293521425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fd16aba878e1b20800000000000000
+      internalID: 3107069822834433917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 63
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73f9bbe833d9bb70800000000000000
+      internalID: 8915389178783069050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05312687cb1933280800000000000000
+      internalID: -9064741386307103920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce39dda7414d8a00800000000000000
+      internalID: 760335688210661056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 43
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba041e855b89ec0a0800000000000000
+      internalID: -6859377277791027029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 43
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60437f195c03b1c20800000000000000
+      internalID: 3178187587155604486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 43
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bb9c774442145b0800000000000000
+      internalID: -5385983802872317030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 43
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ceb5195a5af1dbe0800000000000000
+      internalID: -1454105938715361593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 43
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 217c5ab7033fda140800000000000000
+      internalID: 4732706172994701074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 43
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1b8828d8e3f4b70800000000000000
+      internalID: 8885389367326585248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 31
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b20e7cc6e1debfe0800000000000000
+      internalID: -1171268063866256714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 31
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e532b35a942b8c0800000000000000
+      internalID: -3985041746258862451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 31
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646df70fe041855c0800000000000000
+      internalID: -4226606195890203066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 31
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffffe3abe7db34eb0800000000000000
+      internalID: -4736734031075409921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 31
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2060cea147a0b0f0800000000000000
+      internalID: -1103198008159215570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 10
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d27748c671a6a7c0800000000000000
+      internalID: -4060380482489584935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 10
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b79349dec1ea7bc00800000000000000
+      internalID: 916392488461416827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 10
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecccba94e8dc3f710800000000000000
+      internalID: 1725949093218077902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 10
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d64a539431ecd720800000000000000
+      internalID: 2872418278282249939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af636dbdfb4b9ffe0800000000000000
+      internalID: -1154693093323819270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb3c8ae0b3207a40800000000000000
+      internalID: 5363826398954535926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60861f4df4b0c440800000000000000
+      internalID: 4954158590154145898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 6
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ccb38d5cddd566a0800000000000000
+      internalID: -6456510552234279743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 9
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50a0c24d2ebffc750800000000000000
+      internalID: 6327552953119672837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 6
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709e91d73c88ee830800000000000000
+      internalID: 4102366683779950855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5613e3eddacaaaba0800000000000000
+      internalID: -6076854884425125531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002ed56228e9308d0800000000000000
+      internalID: -2881285054760361472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8868ea3823e55950800000000000000
+      internalID: 6437301004322498699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gray Slime Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d453a5cc5e57f50800000000000000
+      internalID: 6878656671727832463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

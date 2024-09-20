@@ -1,0 +1,1698 @@
+fileFormatVersion: 2
+guid: bf4b467c088ca9a4fab680e4336ac4b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4502615815886343163
+    second: Brown Slime Spritesheet_0
+  - first:
+      213: 611531806479558341
+    second: Brown Slime Spritesheet_1
+  - first:
+      213: -1292380750503613888
+    second: Brown Slime Spritesheet_2
+  - first:
+      213: -8047497534362287448
+    second: Brown Slime Spritesheet_3
+  - first:
+      213: 2306136838246869971
+    second: Brown Slime Spritesheet_4
+  - first:
+      213: 3193140101492043055
+    second: Brown Slime Spritesheet_5
+  - first:
+      213: 1045728533138518109
+    second: Brown Slime Spritesheet_6
+  - first:
+      213: -1613805047826670831
+    second: Brown Slime Spritesheet_7
+  - first:
+      213: 7369186139430256832
+    second: Brown Slime Spritesheet_8
+  - first:
+      213: -5344119847625256608
+    second: Brown Slime Spritesheet_9
+  - first:
+      213: 896472523403429259
+    second: Brown Slime Spritesheet_10
+  - first:
+      213: 5164380888767767531
+    second: Brown Slime Spritesheet_11
+  - first:
+      213: 2829872025267743319
+    second: Brown Slime Spritesheet_12
+  - first:
+      213: 7703255478148852049
+    second: Brown Slime Spritesheet_13
+  - first:
+      213: 147008864397503094
+    second: Brown Slime Spritesheet_14
+  - first:
+      213: 1508378269534331503
+    second: Brown Slime Spritesheet_15
+  - first:
+      213: 5008088401242021964
+    second: Brown Slime Spritesheet_16
+  - first:
+      213: -5482032936482694087
+    second: Brown Slime Spritesheet_17
+  - first:
+      213: 2435023985448452417
+    second: Brown Slime Spritesheet_18
+  - first:
+      213: 8853691290023937618
+    second: Brown Slime Spritesheet_19
+  - first:
+      213: 3196711256385255490
+    second: Brown Slime Spritesheet_20
+  - first:
+      213: -5585582294945140709
+    second: Brown Slime Spritesheet_21
+  - first:
+      213: 879493640498040476
+    second: Brown Slime Spritesheet_22
+  - first:
+      213: -7631014655006457404
+    second: Brown Slime Spritesheet_23
+  - first:
+      213: -1953302047935502343
+    second: Brown Slime Spritesheet_24
+  - first:
+      213: -2149775206180015421
+    second: Brown Slime Spritesheet_25
+  - first:
+      213: -5828601893957804267
+    second: Brown Slime Spritesheet_26
+  - first:
+      213: 3461873291222425164
+    second: Brown Slime Spritesheet_27
+  - first:
+      213: 7444199918315682927
+    second: Brown Slime Spritesheet_28
+  - first:
+      213: -5644809026740678442
+    second: Brown Slime Spritesheet_29
+  - first:
+      213: 5173333280270235042
+    second: Brown Slime Spritesheet_30
+  - first:
+      213: -3080554391262172494
+    second: Brown Slime Spritesheet_31
+  - first:
+      213: -5235979272630373178
+    second: Brown Slime Spritesheet_32
+  - first:
+      213: -5709837743529040794
+    second: Brown Slime Spritesheet_33
+  - first:
+      213: 5124394968277516424
+    second: Brown Slime Spritesheet_34
+  - first:
+      213: -9062464656697295712
+    second: Brown Slime Spritesheet_35
+  - first:
+      213: -956965244888784039
+    second: Brown Slime Spritesheet_36
+  - first:
+      213: 5145790935026233029
+    second: Brown Slime Spritesheet_37
+  - first:
+      213: 637291605119167196
+    second: Brown Slime Spritesheet_38
+  - first:
+      213: 2933195912114889087
+    second: Brown Slime Spritesheet_39
+  - first:
+      213: 589952468886148001
+    second: Brown Slime Spritesheet_40
+  - first:
+      213: -5368839256435439146
+    second: Brown Slime Spritesheet_41
+  - first:
+      213: -534619153167526242
+    second: Brown Slime Spritesheet_42
+  - first:
+      213: -6523747450995867266
+    second: Brown Slime Spritesheet_43
+  - first:
+      213: -4786811726510423113
+    second: Brown Slime Spritesheet_44
+  - first:
+      213: -8044282207590160066
+    second: Brown Slime Spritesheet_45
+  - first:
+      213: 164315549591472852
+    second: Brown Slime Spritesheet_46
+  - first:
+      213: -7577277941825221900
+    second: Brown Slime Spritesheet_47
+  - first:
+      213: -1386682979701027899
+    second: Brown Slime Spritesheet_48
+  - first:
+      213: -8913561507860510502
+    second: Brown Slime Spritesheet_49
+  - first:
+      213: 1247961908527400076
+    second: Brown Slime Spritesheet_50
+  - first:
+      213: -6369878896409041373
+    second: Brown Slime Spritesheet_51
+  - first:
+      213: -1073968494919232664
+    second: Brown Slime Spritesheet_52
+  - first:
+      213: -7932233680062929965
+    second: Brown Slime Spritesheet_53
+  - first:
+      213: -1226437601327436724
+    second: Brown Slime Spritesheet_54
+  - first:
+      213: -6395284223910597054
+    second: Brown Slime Spritesheet_55
+  - first:
+      213: -1179531560405983676
+    second: Brown Slime Spritesheet_56
+  - first:
+      213: 5987679848277856680
+    second: Brown Slime Spritesheet_57
+  - first:
+      213: -8522392470393946821
+    second: Brown Slime Spritesheet_58
+  - first:
+      213: -2279062058377910081
+    second: Brown Slime Spritesheet_59
+  - first:
+      213: 6272531056563640364
+    second: Brown Slime Spritesheet_60
+  - first:
+      213: -1396122221911121402
+    second: Brown Slime Spritesheet_61
+  - first:
+      213: 5384825592150994998
+    second: Brown Slime Spritesheet_62
+  - first:
+      213: 907134499067274875
+    second: Brown Slime Spritesheet_63
+  - first:
+      213: -602826091725866623
+    second: Brown Slime Spritesheet_64
+  - first:
+      213: -3750432239212618818
+    second: Brown Slime Spritesheet_65
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 113
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504f90675ce7381c0800000000000000
+      internalID: -4502615815886343163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 113
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6211e10f89c7800800000000000000
+      internalID: 611531806479558341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 113
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04aeda30e8a801ee0800000000000000
+      internalID: -1292380750503613888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 113
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a2018541ab815090800000000000000
+      internalID: -8047497534362287448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 111
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dba5276c3b010020800000000000000
+      internalID: 2306136838246869971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2dec7b1100505c20800000000000000
+      internalID: 3193140101492043055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 111
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5036357f8c238e00800000000000000
+      internalID: 1045728533138518109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 111
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b1f8bfbdc9a99e0800000000000000
+      internalID: -1613805047826670831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 111
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0097c00cb944660800000000000000
+      internalID: 7369186139430256832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 97
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0619e2d105fd5d5b0800000000000000
+      internalID: -5344119847625256608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 97
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b850c54a209e07c00800000000000000
+      internalID: 896472523403429259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 97
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be3a1d76e019ba740800000000000000
+      internalID: 5164380888767767531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 97
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a26e91d99b54720800000000000000
+      internalID: 2829872025267743319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 95
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159e4253b0677ea60800000000000000
+      internalID: 7703255478148852049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 95
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a2f3588c74a0200800000000000000
+      internalID: 147008864397503094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 95
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62238e5b06dee410800000000000000
+      internalID: 1508378269534331503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c40e8cfeddd408540800000000000000
+      internalID: 5008088401242021964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 95
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c15fdd618ebe3b0800000000000000
+      internalID: -5482032936482694087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 95
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1410638d961fac120800000000000000
+      internalID: 2435023985448452417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 95
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256c8d4c151aeda70800000000000000
+      internalID: 8853691290023937618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 81
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248f55663fffc5c20800000000000000
+      internalID: 3196711256385255490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1075161f760c72b0800000000000000
+      internalID: -5585582294945140709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ec9186ec6943c00800000000000000
+      internalID: 879493640498040476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c14a842a90391690800000000000000
+      internalID: -7631014655006457404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7e2cde22a74e4e0800000000000000
+      internalID: -1953302047935502343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2b2b807d67a22e0800000000000000
+      internalID: -2149775206180015421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fd97d6575ac1fa0800000000000000
+      internalID: -5828601893957804267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 79
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e99b4aa6b0b0030800000000000000
+      internalID: 3461873291222425164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 79
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6cb238726c1f4760800000000000000
+      internalID: 7444199918315682927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 79
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d01430091c99a1b0800000000000000
+      internalID: -5644809026740678442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 79
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a5b63b753f5bc740800000000000000
+      internalID: 5173333280270235042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 79
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba6c854a1caf35d0800000000000000
+      internalID: -3080554391262172494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4fe8bc7901657b0800000000000000
+      internalID: -5235979272630373178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66465d303d492c0b0800000000000000
+      internalID: -5709837743529040794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8800bfcc2128d1740800000000000000
+      internalID: 5124394968277516424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ac7604e868ab3280800000000000000
+      internalID: -9062464656697295712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95362041e2d28b2f0800000000000000
+      internalID: -956965244888784039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 66
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cee9a28795896740800000000000000
+      internalID: 5145790935026233029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 63
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda677d965d18d800800000000000000
+      internalID: 637291605119167196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 63
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f716c3e242ec4b820800000000000000
+      internalID: 2933195912114889087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a3d25e05aeef2800800000000000000
+      internalID: 589952468886148001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 43
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d94eff342d0e75b0800000000000000
+      internalID: -5368839256435439146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 43
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e96545576b6a498f0800000000000000
+      internalID: -534619153167526242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 43
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e710803f14ef675a0800000000000000
+      internalID: -6523747450995867266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 43
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b30caaa814d19db0800000000000000
+      internalID: -4786811726510423113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 43
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39e79fd3f7fc5090800000000000000
+      internalID: -8044282207590160066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 43
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da097c2f14c74200800000000000000
+      internalID: 164315549591472852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 31
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4faca19abd918d690800000000000000
+      internalID: -7577277941825221900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 31
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb07da4d2381cce0800000000000000
+      internalID: -1386682979701027899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 31
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad80160e80bac4480800000000000000
+      internalID: -8913561507860510502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 31
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c848efa6eb6a15110800000000000000
+      internalID: 1247961908527400076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 31
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 326284d84e4a997a0800000000000000
+      internalID: -6369878896409041373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 10
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863d060185f7811f0800000000000000
+      internalID: -1073968494919232664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 10
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3a578ae7b0be190800000000000000
+      internalID: -7932233680062929965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 10
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c22b1ef71dafee0800000000000000
+      internalID: -1226437601327436724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 10
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e262cc1e26f37a0800000000000000
+      internalID: -6395284223910597054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 0
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e93a49b4671afe0800000000000000
+      internalID: -1179531560405983676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a1dd511913881350800000000000000
+      internalID: 5987679848277856680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d74b5a3316ab980800000000000000
+      internalID: -8522392470393946821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 6
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8605502252f50e0800000000000000
+      internalID: -2279062058377910081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 9
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c28d41d33c18c0750800000000000000
+      internalID: 6272531056563640364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 6
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60265f37c3aff9ce0800000000000000
+      internalID: -1396122221911121402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 630b795985ebaba40800000000000000
+      internalID: 5384825592150994998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76286c450ac69c00800000000000000
+      internalID: 907134499067274875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 0
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 189b75d0dd452a7f0800000000000000
+      internalID: -602826091725866623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brown Slime Spritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb1f83cfb9c3fbc0800000000000000
+      internalID: -3750432239212618818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
