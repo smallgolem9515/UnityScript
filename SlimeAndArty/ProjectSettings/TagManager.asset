@@ -8,6 +8,8 @@ TagManager:
   - Spike
   - Bullet
   - DieZone
+  - Key
+  - Door
   layers:
   - Default
   - TransparentFX

@@ -43,14 +43,9 @@ public class WeaponManager : MonoBehaviour
 
         float rotationZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         //Atan() : 함수는 좌표평면에서 수평축으로부터 한 점까지의 각도를 구하는 함수
-        //if (playerManager.dir == 0)
-        //{
-            transform.rotation = Quaternion.Euler(0, 0, rotationZ);
-        //}
-        //else if (playerManager.dir == 1)
-        //{
-        //    transform.rotation = Quaternion.Euler(0, 0, -rotationZ);
-        //}
+
+        transform.rotation = Quaternion.Euler(0, 0, rotationZ);
+
         if(!isFire)
         {
             timer += Time.deltaTime;
@@ -84,14 +79,9 @@ public class WeaponManager : MonoBehaviour
                 bullet.transform.position = bulletPos.position;
                 bullet.transform.rotation = bulletPos.rotation;
                 bullet.SetActive(true);
-
-                Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-                Vector2 direction = (mousepos - transform.position).normalized;
-                rb.velocity = direction * 100;
             }
             isFire = false;
             bulletSound.Play();
-            //Instantiate(bulletObj, bulletPos.transform.position, Quaternion.identity);
         }       
     }
     public void ReturnBulletToPool(GameObject bullet)

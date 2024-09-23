@@ -22,7 +22,7 @@ public class BulletManager : MonoBehaviour
         Vector3 rotation = transform.position - mousePoint;
         rig2D.velocity = new Vector2(diretion.x, diretion.y).normalized * bulSpeed;
         float rotationZ = Mathf.Atan2(rotation.y,rotation.x)*Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0,0,rotationZ+90);
+        transform.rotation = Quaternion.Euler(0,0,rotationZ);
 
         //if(slime.transform.lossyScale.x > 0)
         //{

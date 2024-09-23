@@ -11,7 +11,7 @@ public class Scrolmanager : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        playerManager = FindObjectOfType<PlayerManager>();
+        //playerManager = FindObjectOfType<PlayerManager>();
         defultPosi = transform.position;
     }
 
@@ -19,17 +19,17 @@ public class Scrolmanager : MonoBehaviour
     void Update()
     {
         cam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
-        if(playerManager.gameOver.activeSelf)
-        {
-            if(playerManager.isCheck)
-            {
-                transform.position = new Vector3(defultPosi.x,defultPosi.y+2.0f, -10);
-            }
-            else
-            {
-                transform.position = defultPosi;
-            }
-        }
+        //if(playerManager.gameOver.activeSelf)
+        //{
+        //    if(playerManager.isCheck)
+        //    {
+        //        transform.position = new Vector3(defultPosi.x,defultPosi.y+2.0f, -10);
+        //    }
+        //    else
+        //    {
+        //        transform.position = defultPosi;
+        //    }
+        //}
         Invoke("Running", 1.0f);
     }
     void Running()

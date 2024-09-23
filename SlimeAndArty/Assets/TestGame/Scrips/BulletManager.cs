@@ -10,13 +10,14 @@ public class BulletManager : MonoBehaviour
     Rigidbody2D rid2D;
     WeaponManager weaponManager;
     float bulletSpeed = 30f;
-    void Start()
+
+    private void OnEnable()//활성화되었을때 호출하는 함수
     {
         rid2D = GetComponent<Rigidbody2D>();
         weaponManager = FindObjectOfType<WeaponManager>();
 
         maincamera = Camera.main;
-        
+
         mouseFos = maincamera.ScreenToWorldPoint(Input.mousePosition);
 
         Vector3 direction = mouseFos - transform.position;
@@ -25,7 +26,6 @@ public class BulletManager : MonoBehaviour
         float rotationZ = Mathf.Atan2(rotation.x, rotation.y) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rotationZ + 90);
         //+90 : 총알이 직선모양으로 나가도록 보정(총알의 모양에 따라 주는 값을 조정한다.)
-        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
