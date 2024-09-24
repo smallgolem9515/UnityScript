@@ -10,6 +10,7 @@ TagManager:
   - DieZone
   - Key
   - Door
+  - Snow
   layers:
   - Default
   - TransparentFX

@@ -6,15 +6,13 @@ public class BulletManager : MonoBehaviour
 {
     float bulSpeed = 10.0f;
     Rigidbody2D rig2D;
-    PlayerManagerSlime slime;
     Vector3 mousePoint;
     Camera cam;
     BoxCollider2D boxCollider2D;
-    float timer = 0;
+  
     void Start()
     {
         rig2D = GetComponent<Rigidbody2D>();
-        slime = FindObjectOfType<PlayerManagerSlime>();
         boxCollider2D = GetComponent<BoxCollider2D>();
         cam = Camera.main;
         mousePoint = cam.ScreenToWorldPoint(Input.mousePosition);
@@ -37,13 +35,12 @@ public class BulletManager : MonoBehaviour
     {
         if(!PlayerManagerSlime.instance.isFire)
         {
-            timer += Time.deltaTime;
-            if (timer > 1f)
-            {
-                boxCollider2D.isTrigger = false;
-            }
+            StartCoroutine(ShotTime());
         }
-        
+        if(PlayerManagerSlime.instance.isClear)
+        {
+            ClearBullet();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -72,5 +69,13 @@ public class BulletManager : MonoBehaviour
             }
         }
     }
-
+    public void ClearBullet()
+    {        
+        Destroy(gameObject);
+    }
+    IEnumerator ShotTime()
+    {
+        yield return new WaitForSeconds(1);
+        boxCollider2D.isTrigger = false;
+    }
 }

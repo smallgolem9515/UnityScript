@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KeyManager : MonoBehaviour
 {
+    public static KeyManager instance {  get; private set; }
     List<string> key1List = new List<string>();
     public bool door1 = false;
     Dictionary<GameObject,List<int>> keyDoorSet = new Dictionary<GameObject,List<int>>();
@@ -11,7 +12,14 @@ public class KeyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame

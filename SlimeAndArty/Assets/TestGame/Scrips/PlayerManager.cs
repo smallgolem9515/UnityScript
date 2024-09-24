@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerManager : PlayerActive
 {
@@ -19,13 +21,17 @@ public class PlayerManager : PlayerActive
     protected AudioSource audioSource;
     BoxCollider2D boxCollider;
     Animator animator;
-
-    [Header("움직임")]
-    public float jumpHeight; //점프높이
+    [Header("플레이어 데이터")]
     Vector3 moveDirection; //OnMove의 값을 저장할 벡터3
     float speed = 3.0f; //움직이는 속도
+    public int CoinCount = 0;
+    bool isDamage = false; //데미지체크
+    private int playerHP = 100;
+    Vector3 defaltPosition;
+    public bool isdie=false;
+    [Header("점프")]
+    public float jumpHeight; //점프높이
     public bool isjump; //더블점프체크
-
     [Header("기즈모")]
     public Color collsionColor = Color.red; //기즈모색
     public Vector2 boxClliderSize; //콜라이더의 크기
@@ -36,16 +42,13 @@ public class PlayerManager : PlayerActive
     public Transform groundCheck; //체크할 위치
     public float groundRound = 0.1f; //체크한위치에서 충돌판정할 원의 사이즈
     public LayerMask groundMask; //레이어마스크는 레이어의 정보를 담고있는 구조체
-
-    [Header("기타")]
-    public int CoinCount = 0;
-    bool isDamage=false; //데미지체크
-
-    private int playerHP = 100;
     [Header("애니메이션")]
     public float animationSpeed = 1f;
-    public string currentAnimation = "Idle";
-    public string nextAnimation = "Run";
+    [Header("-----FadeInFadeOut-----")]
+    public Image blackPanel; //검은색 화면
+    public float fadeDuration = 1f; //페이드인, 페이드아웃 속도
+    public string nextScenName; //다음씬
+    static bool isFading = false;
 
     private void Awake()
     {
@@ -65,14 +68,23 @@ public class PlayerManager : PlayerActive
         mainCam = Camera.main;
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
+        defaltPosition = transform.position;
+        Debug.Log(isFading);
+        if(isFading)
+        {
+           StartCoroutine(FadeInAndLoadScene());
+        }
     }
     private void Update()
     {
         float mag = new Vector2(moveDirection.x, moveDirection.y).magnitude;
         animator.SetFloat("Run", mag);
         //--------------------------------------------------------------------------------------//
-        PlayerMovement();
-        transform.Translate(new Vector3(Mathf.Abs(moveDirection.x),moveDirection.y,0)*Time.deltaTime*speed);
+        if(!isdie)
+        {
+            PlayerMovement();
+            transform.Translate(new Vector3(Mathf.Abs(moveDirection.x),moveDirection.y,0)*Time.deltaTime*speed);
+        }
         //--------------------------------------------------------------------------------------//
         mainCam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
         //--------------------------------------------------------------------------------------//
@@ -83,23 +95,8 @@ public class PlayerManager : PlayerActive
         }
         //--------------------------------------------------------------------------------------//
         animator.speed = animationSpeed; //애니메이션이 재생되는 스피드를 조정
-        AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
+        //AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         //0번째 레이어에 현재 애니메이션 상태 정보를 반환합니다.
-
-        if (stateInfo.IsName(currentAnimation) && stateInfo.normalizedTime >= 1.0f)
-        {
-            animator.Play(nextAnimation);
-            currentAnimation = nextAnimation;
-
-            //Debug.Log("애니메이션이 끝나고 " + nextAnimation + "애니메이션으로 전환됩니다.");
-        }
-
-        if (stateInfo.IsName(currentAnimation))
-        {
-            Debug.Log("현재 재생 중인 애니메이션 : " + currentAnimation);
-
-            Debug.Log("현재 애니메이션 진행 상태 : " + stateInfo.normalizedTime);
-        }
     }
     public void PlayerMovement()
     {
@@ -143,10 +140,6 @@ public class PlayerManager : PlayerActive
 
     private void OnTriggerEnter2D(Collider2D collision)//트리거가 충돌시 한번 실행
     {
-        //if(collision.gameObject.name.Contains("Trap"))
-        //{
-        //    PlayerDamage(20);
-        //}
         if (collision.gameObject.name.StartsWith("w"))//오브젝트가 하나만 존재할 때
         {
             isjump = true;
@@ -155,26 +148,23 @@ public class PlayerManager : PlayerActive
         {
             OnDead();
         }
-        if (collision.gameObject.tag == "Monster")
+        if(!isDamage && collision.tag != "Bullet")
         {
-            
-            if(isDamage == false)
+            if(collision.tag == "Monster")
             {
-                playerHP -= 10;
-                animator.SetTrigger("Damage");
-                isDamage = true;
-                StartCoroutine(DamageCount());
-                if(playerHP <=0)
-                {
-                    OnDead();
-                }
-            }  
+                PlayerDamage(10);
+            }
+
         }
         if(collision.gameObject.name == "Check")
         {
             isCheck = true;
         }
-        Debug.Log("OnTriggerEnter2D" + collision.gameObject.name);
+        if(collision.tag == "Door" && isFading == false)
+        {
+            audioSource.PlayOneShot(audioClip[1]);
+            StartCoroutine(FadeInAndLoadScene());
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -191,27 +181,22 @@ public class PlayerManager : PlayerActive
             transform.SetParent(null);
         }
     }
-    public virtual void OnDead()
-    {
-        if(isCheck)
-        {
-            //Respon(secondObj);
-        }
-        else
-        {
-            //Respon(defaultObj);
-        }
-        audioSource.PlayOneShot(audioClip[0]);      
+    public void OnDead()
+    {  
         //gameOver.SetActive(true);
         Invoke("RectiveateGameOver", 0.3f);
+        isdie = true;
     }
-    public void Respon(GameObject obj)
+    public void Respon(Vector3 vec3)
     {
-        transform.position = obj.transform.position;
+        transform.position = vec3;
+        playerHP = 100;
     }
     void RectiveateGameOver()
     {
         //gameOver.SetActive(false);
+        Respon(defaltPosition);
+        isdie = false;
     }
     private void OnDrawGizmos()
     {
@@ -252,6 +237,70 @@ public class PlayerManager : PlayerActive
             isDamage = true;
             StartCoroutine(DamageCount());
             Debug.Log(playerHP);
+            if(playerHP <= 0)
+            {
+                OnDead();
+            }
         }  
+    }
+    public void PlayerFootSound()
+    {
+        Collider2D collider2D = Physics2D.OverlapCircle(groundCheck.position, groundRound, groundMask);
+        Debug.Log(collider2D.tag);
+        if(collider2D.CompareTag("Snow"))
+        {
+            audioSource.PlayOneShot(audioClip[5]);
+        }
+        //else if(collider2D.CompareTag(""))
+        //{
+        //    audioSource.PlayOneShot(audioClip[6]);
+        //}
+        else
+        {
+            audioSource.PlayOneShot(audioClip[4]);
+        }
+    }
+    //페이드인 효과를 처리하고 씬을 로드하는 코루틴
+    IEnumerator FadeInAndLoadScene()
+    {
+        if (!isFading)
+        {
+            isFading = true;
+            yield return StartCoroutine(FadeImage(0, 1, fadeDuration)); //패널 페이드인
+            //알파값이 0이면 투명 1이면 검은색
+            SceneManager.LoadScene(nextScenName); //씬 로드
+
+        }
+        else if (isFading)
+        {
+            yield return StartCoroutine(FadeImage(1,0,fadeDuration)); //씬 로드 후 페이드 아웃
+            //예시일뿐 현재는 실행되지않는다.
+            isFading=false; //페이드 종료 후 상태 초기화
+        }
+
+    }
+    //Image의 Alpha 값을 조절하여 페이드 효과를 처리하는 코루틴
+    IEnumerator FadeImage(float startAlpha, float endAlpha, float duration)
+    {
+        float elapsedTime = 0f;
+
+        Color panelColor = blackPanel.color; //패널 색상 가져오기
+        //페이드 효과 동안 Alpha 값을 점진적으로 변화
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+            //프레임당 시간이 축적된다.
+            float newAlpha = Mathf.Lerp(startAlpha, endAlpha, elapsedTime / duration);
+            //프레임이 지나갈수록 1에 가까워진다.
+
+            panelColor.a = newAlpha;
+            blackPanel.color = panelColor;//패널 색상 업데이트
+
+            yield return null; //프레임마다 갱신
+        }
+        //duration을 넘어가서 탈출
+        //최종적으로 알파 값 설정
+        panelColor.a = endAlpha;
+        blackPanel.color = panelColor;
     }
 }

@@ -9,6 +9,9 @@ public class PlayerManagerSlime : MonoBehaviour
     public float playerSpeed = 5.0f;
     public int count = 6;
     public float delayTime = 0.3f;
+    public int maxCount = 6;
+    public bool isClear = false;
+
     [Header("외부 참조")]
     public GameObject bulletObj;
     public Transform bulletPos;
@@ -22,9 +25,13 @@ public class PlayerManagerSlime : MonoBehaviour
     public static PlayerManagerSlime instance;
     private void Awake()
     {
-        if (PlayerManagerSlime.instance == null)
+        if (instance == null)
         {
-            PlayerManagerSlime.instance = this;
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
     void Start()
