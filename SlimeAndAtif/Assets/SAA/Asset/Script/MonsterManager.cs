@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MonsterManager : MonoBehaviour
 {
-    int damageCount = 0;
+    public int hp;
+    bool isJelly;
 
     void Start()
     {
@@ -16,16 +17,23 @@ public class MonsterManager : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet")
         {
-            damageCount++;
-            if (damageCount > 2)
+            hp--;
+            if (hp <= 0)
             {
                 gameObject.layer = 6;
+                isJelly = true;
             }
         }
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            if (gameObject.layer == 6)
+            {
+                gameObject.SetActive(false);
+            }
+        }
     }
 }

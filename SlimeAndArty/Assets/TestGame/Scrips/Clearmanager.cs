@@ -6,12 +6,10 @@ public class Clearmanager : MonoBehaviour
 {
     public GameObject clearPoint;
     AudioSource clearSource;
-    PlayerManager playerManager;
     // Start is called before the first frame update
     void Start()
     {
         clearSource = GetComponent<AudioSource>();
-        playerManager = FindObjectOfType<PlayerManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,7 +20,7 @@ public class Clearmanager : MonoBehaviour
             clearSource.Play();
             Invoke("ReStart", 2f);
             //playerManager.Respon(playerManager.defaultObj);
-            playerManager.isCheck = false;
+            PlayerManager.instance.isCheck = false;
         }
     }
     void ReStart()

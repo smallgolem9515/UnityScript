@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class BulletManager : MonoBehaviour
@@ -10,6 +11,7 @@ public class BulletManager : MonoBehaviour
     Rigidbody2D rid2D;
     WeaponManager weaponManager;
     float bulletSpeed = 30f;
+    public LayerMask layer;
 
     private void OnEnable()//활성화되었을때 호출하는 함수
     {
@@ -29,8 +31,9 @@ public class BulletManager : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag != "Player"
-            && collision.tag != "Spike")
+        //Debug.Log(collision.gameObject.layer);
+        if (collision.tag != "Player" 
+            || collision.tag != "Spike" || collision.gameObject.layer != layer)
         {
             weaponManager.ReturnBulletToPool(gameObject);
             //Destroy(gameObject);

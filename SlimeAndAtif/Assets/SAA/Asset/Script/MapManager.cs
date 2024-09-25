@@ -12,7 +12,7 @@ public class MapManager : MonoBehaviour
     void Start()
     {
         mainCam = Camera.main;
-        defaltPosi = transform.localPosition;
+        defaltPosi = transform.GetChild(0).localPosition;
     }
 
     // Update is called once per frame

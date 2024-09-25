@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.InputSystem;
@@ -7,22 +8,50 @@ using UnityEngine.InputSystem;
 public class WeaponManager : MonoBehaviour
 {
     private Camera mainCamera; //카메라
-    private Vector3 mousepos; //마우스의 위치 저장
+    private Vector3 mousePos; //마우스의 위치 저장
 
     [Header("Bullet")]
     public GameObject bulletObj; //총알
-    public Transform bulletPos; //총알이 생성될 위치
+    public Transform[] bulletPos; //총알이 생성될 위치
 
-    public bool isFire = false; //총을 쏘는 여부
+    public bool isFire = true; //총을 쏘는 여부
     //bool형의 이름은 is,be,on등이있는데 is를 추천
-    private float timer = 0; // 시간저장변수
-    private float delayTime = 0.3f;
-    float rayDistance = 1000f;
+    private float delayTime = 0.1f;
+
+    [Header("ObjectPool")]
     public int poolSize = 100; //오브젝트 풀링 사이즈
     private List<GameObject> bulletPool; //오브젝트 풀 리스트
+
+    [Header("RayCast")]
+    public LayerMask targetLayer;
+    float rayDistance = 100f;
     RaycastHit2D raycastHit;
+    private float rotationZ;
+    private Vector2 rayDirection;
+
+    [Header("Sound")]
+    public AudioClip[] SFXClips;
     AudioSource bulletSound; //발사음
-    
+
+    [Header("Weapon Settings")]
+    public bool isGetPistol = false;
+    public bool isGetShouGun = false;
+    public LayerMask weaponMask;
+    GameObject equipObj;
+
+    [Header("Shotgun Settings")]
+    public int pelletCount = 10; //샷건 탄환 갯수
+    public float spreaAngle = 30; //샷건탄환이 퍼지는 각도
+    public float knockbackForce = 10f; //충돌한 오브젝트를 밀어내는 힘
+
+    private int pistolBulletCount = 100;
+    private int shougunBulletCount = 100;
+
+    [Header("CameraShake Settings")]
+    public float shakeDuration = 0.5f; //흔들림 지속 시간
+    public float shakeMagnitude = 0.1f; //흔들림 강도
+    private Vector3 originalPos; //카메라 원래 위치
+
     void Start()
     {
         bulletSound = GetComponent<AudioSource>(); 
@@ -34,28 +63,29 @@ public class WeaponManager : MonoBehaviour
             bullet.SetActive(false);
             bulletPool.Add(bullet);
         }
+        if (Camera.main != null)
+        {
+            originalPos = Camera.main.transform.localPosition;
+        }
+        else
+        {
+            Debug.Log("메인 카메라를 찾을 수 없습니다. MainCamera Tag를 확인해주세요.");
+        }
     }
     void Update()
     {
-        mousepos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        
-        Vector3 rotation = mousepos - transform.position;
+        //마우스 위치 업데이트 및 월드 좌표 반환
+        mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
 
-        float rotationZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
+        //마우스 방향으로
+        Vector3 rotation = mousePos - transform.position;
+
+        rotationZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         //Atan() : 함수는 좌표평면에서 수평축으로부터 한 점까지의 각도를 구하는 함수
 
         transform.rotation = Quaternion.Euler(0, 0, rotationZ);
 
-        if(!isFire)
-        {
-            timer += Time.deltaTime;
-            if(timer > delayTime)
-            {
-                isFire = true;
-                timer = 0;
-            }
-        }
-        Debug.DrawLine(mousepos, raycastHit.point, Color.red);
+
     }
     //풀에서 비활성화된 총알을 가져오는 함수
     GameObject GetBulletFromPool()
@@ -72,48 +102,160 @@ public class WeaponManager : MonoBehaviour
     }
     void OnClick()
     {
-        if(isFire && PlayerManager.instance.isdie == false)
+        StartCoroutine(Shake(shakeDuration, shakeMagnitude));
+        StartCoroutine(DelayTime(delayTime));
+        if (isFire && PlayerManager.instance.isdie == false)
         {
-            // 마우스 위치를 가져와서 월드 좌표로 변환
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            // 현재 오브젝트 위치에서 마우스 방향으로의 벡터 계산
-            Vector2 rayDirection = (mousePosition - (Vector2)bulletPos.position).normalized;
-
-            // RaycastHit2D는 레이가 충돌한 오브젝트의 정보를 담습니다.
-            RaycastHit2D hit = Physics2D.Raycast(bulletPos.position, rayDirection, rayDistance);
-
-            // 레이가 무언가에 충돌했다면
-            if (hit.collider)
+            if(isGetPistol && pistolBulletCount > 0)
             {
-                Debug.DrawRay(bulletPos.position, rayDirection * rayDistance, Color.black);
-                // 충돌한 오브젝트의 이름 출력
-                Debug.Log("충돌한 오브젝트: " + hit.collider.name);
+                pistolBulletCount--;
+                FirePistol();
+                delayTime = 0.2f;
+                isFire = false;
+                return;
             }
-
-            // 디버그용 레이 시각화 (Scene 창에서 레이 경로를 확인)
-            Debug.DrawRay(bulletPos.position, rayDirection * rayDistance, Color.red);
-            //raycastHit = Physics2D.Raycast(new Vector2(bulletPos.position.x, bulletPos.position.y), mousepos, 1000);
-            //Debug.Log(raycastHit.collider.name);
-            //if(raycastHit.collider.tag != "Player")
-            //{
-            //    raycastHit.collider.gameObject.SetActive(false);   
-            //}
-            //GameObject bullet = GetBulletFromPool();
-            //if(bullet != null)
-            //{
-            //    bullet.transform.position = bulletPos.position;
-            //    bullet.transform.rotation = bulletPos.rotation;
-            //    bullet.SetActive(true);
-            //}
-            //isFire = false;
-            bulletSound.Play();
+            else if(isGetShouGun && shougunBulletCount > 0)
+            {
+                shougunBulletCount--;
+                FireShotGun();
+                delayTime = 1f;
+                isFire = false;
+                return;
+            }
+            isFire = false;
+            bulletSound.PlayOneShot(SFXClips[2]);
         }       
+    }
+    void FirePistol()
+    {
+        // 현재 오브젝트 위치에서 마우스 방향으로의 벡터 계산
+        rayDirection = (mousePos - bulletPos[0].position).normalized;
+
+        // RaycastHit2D는 레이가 충돌한 오브젝트의 정보를 담습니다.
+        RaycastHit2D hit = Physics2D.Raycast(bulletPos[0].position, rayDirection, rayDistance);
+
+        // 레이가 무언가에 충돌했다면
+        if (hit.collider)
+        {
+            Debug.DrawRay(bulletPos[0].position, rayDirection * rayDistance, Color.black);
+            // 충돌한 오브젝트의 이름 출력
+            Debug.Log("충돌한 오브젝트: " + hit.collider.name);
+        }
+        // 디버그용 레이 시각화 (Scene 창에서 레이 경로를 확인)
+        Debug.DrawRay(bulletPos[0].position, rayDirection * rayDistance, Color.red,0.2f);
+
+        GameObject bullet = GetBulletFromPool();
+        if (bullet != null)
+        {
+            bullet.transform.position = bulletPos[0].position;
+            bullet.transform.rotation = bulletPos[0].rotation;
+            bullet.SetActive(true);
+        }
+        bulletSound.PlayOneShot(SFXClips[0]);
+    }
+    void FireShotGun()
+    {
+        bulletSound.PlayOneShot(SFXClips[1]);
+        for (int i = 0; i < pelletCount; i++)
+        {
+            rayDirection = (mousePos - bulletPos[1].position).normalized;
+            //퍼지는 각도를 계산
+            float randomAngle = Random.Range(-spreaAngle / 2f, spreaAngle / 2f);
+            Vector2 spreadDirection = Quaternion.Euler(0, 0, randomAngle) * rayDirection;
+
+            RaycastHit2D hit = Physics2D.Raycast(bulletPos[1].position, spreadDirection, rayDistance, targetLayer);
+            
+            Debug.DrawRay(bulletPos[1].position, spreadDirection * rayDistance, Color.red,0.5f);
+            if (hit.collider != null)
+            {
+                Rigidbody2D rb = hit.collider.GetComponent<Rigidbody2D>();
+                if(rb != null)
+                {
+                    Vector2 knockbackDirection = (hit.collider.transform.position - bulletPos[1].position).normalized;
+                    rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+                }
+            }
+        }
     }
     public void ReturnBulletToPool(GameObject bullet)
     {
         bullet.SetActive(false);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> ();
         rb.velocity = Vector2.zero;
+    }
+    IEnumerator Shake(float duration, float magnitude)
+    {
+        if (Camera.main == null)
+        {
+            Debug.Log("MainCamera가 없습니다.");
+            yield break;
+        }
+        float elapsed = 0.0f; //경과 시간 초기화
+        while (elapsed < duration)
+        {
+            float x = Random.Range(-1, 1f) * magnitude;
+            float y = Random.Range(-1, 1f) * magnitude;
+
+            mainCamera.transform.localPosition = new Vector3(0, originalPos.y + y, -10);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        mainCamera.transform.localPosition = originalPos;
+    }
+    IEnumerator DelayTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+        isFire = true;
+    }
+    void OnEKey()
+    {
+        RaycastHit2D ehit = Physics2D.Raycast(transform.position, transform.right, 2, weaponMask);
+        Debug.DrawRay(transform.position, transform.right * 2, Color.red, 0.2f);
+        Debug.Log("Ekey");
+        if (ehit)
+        {
+            if(ehit.collider.name == "Pistol")
+            {
+                if(isGetShouGun)
+                {
+                    equipObj.transform.SetParent(null);
+                    isGetShouGun = false;
+                }
+                ehit.collider.transform.SetParent(transform);
+                ehit.collider.transform.localPosition = Vector3.zero;
+                isGetPistol = true;
+                equipObj = ehit.collider.gameObject;
+            }
+            else if(ehit.collider.name == "Shotgun")
+            {
+                if (isGetPistol)
+                {
+                    equipObj.transform.SetParent(null);
+                    isGetPistol = false;
+                }
+                ehit.collider.transform.SetParent(transform);
+                ehit.collider.transform.localPosition = Vector3.zero;
+                isGetShouGun = true;
+                equipObj = ehit.collider.gameObject;
+            }
+            else if(ehit.collider.tag == "PistolBullet")
+            {
+                int bullet = Random.Range(3, 10);
+                pistolBulletCount += bullet;
+                if(pistolBulletCount > 99)
+                {
+                    pistolBulletCount = 99;
+                }
+            }
+            else if (ehit.collider.tag == "ShougunBullet")
+            {
+                int bullet = Random.Range(3, 10);
+                shougunBulletCount += bullet;
+                if(shougunBulletCount > 99)
+                {
+                    shougunBulletCount = 99;
+                }
+            }
+        }
     }
 }

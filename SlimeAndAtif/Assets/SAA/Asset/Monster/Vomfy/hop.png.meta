@@ -1,49 +1,61 @@
 fileFormatVersion: 2
-guid: a17ec58dbba317149be72b16b41a79cb
+guid: 8aa2dab693f6be240bb2aa984600bf0c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2088418356045653586
-    second: '[EMPTYING] Shotgun_V1.02_0'
+      213: 2065597285237618880
+    second: hop_0
   - first:
-      213: 2331453189084599509
-    second: '[EMPTYING] Shotgun_V1.02_1'
+      213: -4948143749771826291
+    second: hop_1
   - first:
-      213: -5881505666285234546
-    second: '[EMPTYING] Shotgun_V1.02_2'
+      213: 5810166226096011594
+    second: hop_2
   - first:
-      213: 6234501854145850383
-    second: '[EMPTYING] Shotgun_V1.02_3'
+      213: 1640951914729192560
+    second: hop_3
   - first:
-      213: -6743582618657354386
-    second: '[EMPTYING] Shotgun_V1.02_4'
+      213: -7008355901830759640
+    second: hop_4
   - first:
-      213: -4881473313244157614
-    second: '[EMPTYING] Shotgun_V1.02_5'
+      213: -6687632259457714418
+    second: hop_5
   - first:
-      213: 4328730101059669720
-    second: '[EMPTYING] Shotgun_V1.02_6'
+      213: 8955036706933545414
+    second: hop_6
   - first:
-      213: 7999074827651517121
-    second: '[EMPTYING] Shotgun_V1.02_7'
+      213: 7901989025978898494
+    second: hop_7
   - first:
-      213: -8157819355757984313
-    second: '[EMPTYING] Shotgun_V1.02_8'
+      213: 4213533847948140796
+    second: hop_8
   - first:
-      213: -3064484716200430078
-    second: '[EMPTYING] Shotgun_V1.02_9'
+      213: -8465138228555726120
+    second: hop_9
   - first:
-      213: -1580354718636229874
-    second: '[EMPTYING] Shotgun_V1.02_10'
+      213: 7902147409813383845
+    second: hop_10
   - first:
-      213: 5159438192747358962
-    second: '[EMPTYING] Shotgun_V1.02_11'
+      213: 1674278492195254922
+    second: hop_11
   - first:
-      213: 7553782951320809569
-    second: '[EMPTYING] Shotgun_V1.02_12'
+      213: -8525931278545784139
+    second: hop_12
   - first:
-      213: 8704345171974503800
-    second: '[EMPTYING] Shotgun_V1.02_13'
+      213: 1265051494643432132
+    second: hop_13
+  - first:
+      213: -7231469465178732893
+    second: hop_14
+  - first:
+      213: 6024798255347219633
+    second: hop_15
+  - first:
+      213: -4853232299443094627
+    second: hop_16
+  - first:
+      213: 6318355716154059957
+    second: hop_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,12 +151,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_0'
+      name: hop_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 96
+        x: 5
+        y: 70
+        width: 21
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -153,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 256a18e0e6d8bfc10800000000000000
-      internalID: 2088418356045653586
+      spriteID: 0c8799379c97aac10800000000000000
+      internalID: 2065597285237618880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_1'
+      name: hop_1
       rect:
         serializedVersion: 2
-        x: 163
-        y: 0
-        width: 96
-        height: 21
+        x: 36
+        y: 70
+        width: 23
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d4d6d9a25cfa5020800000000000000
-      internalID: 2331453189084599509
+      spriteID: d8be749d979a45bb0800000000000000
+      internalID: -4948143749771826291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_2'
+      name: hop_2
       rect:
         serializedVersion: 2
-        x: 323
-        y: 0
-        width: 96
-        height: 21
+        x: 69
+        y: 70
+        width: 21
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,20 +207,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e861f9012c1b06ea0800000000000000
-      internalID: -5881505666285234546
+      spriteID: a49bc68266bd1a050800000000000000
+      internalID: 5810166226096011594
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_3'
+      name: hop_3
       rect:
         serializedVersion: 2
-        x: 483
-        y: 0
-        width: 96
-        height: 21
+        x: 102
+        y: 70
+        width: 19
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,19 +228,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f0ca0ef8766658650800000000000000
-      internalID: 6234501854145850383
+      spriteID: 07c3ee28215d5c610800000000000000
+      internalID: 1640951914729192560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_4'
+      name: hop_4
       rect:
         serializedVersion: 2
-        x: 642
-        y: 0
-        width: 96
+        x: 133
+        y: 74
+        width: 21
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -237,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6d0e6d565bf962a0800000000000000
-      internalID: -6743582618657354386
+      spriteID: 82b7ddb60715dbe90800000000000000
+      internalID: -7008355901830759640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_5'
+      name: hop_5
       rect:
         serializedVersion: 2
-        x: 802
-        y: 0
-        width: 96
-        height: 21
+        x: 165
+        y: 70
+        width: 21
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,19 +270,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 259688f72e5814cb0800000000000000
-      internalID: -4881473313244157614
+      spriteID: e07749284e1c033a0800000000000000
+      internalID: -6687632259457714418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_6'
+      name: hop_6
       rect:
         serializedVersion: 2
-        x: 963
-        y: 0
-        width: 96
+        x: 6
+        y: 38
+        width: 20
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -279,20 +291,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8dec332a71db21c30800000000000000
-      internalID: 4328730101059669720
+      spriteID: 6c99b5b607ea64c70800000000000000
+      internalID: 8955036706933545414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_7'
+      name: hop_7
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 0
-        width: 96
-        height: 21
+        x: 37
+        y: 38
+        width: 22
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,20 +312,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1ca00f1cc2c620f60800000000000000
-      internalID: 7999074827651517121
+      spriteID: e38d180172189ad60800000000000000
+      internalID: 7901989025978898494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_8'
+      name: hop_8
       rect:
         serializedVersion: 2
-        x: 1283
-        y: 0
-        width: 96
-        height: 21
+        x: 69
+        y: 38
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -321,20 +333,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c54d36948a99ce80800000000000000
-      internalID: -8157819355757984313
+      spriteID: cf0a800e5ba797a30800000000000000
+      internalID: 4213533847948140796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_9'
+      name: hop_9
       rect:
         serializedVersion: 2
-        x: 1443
-        y: 0
-        width: 96
-        height: 21
+        x: 102
+        y: 38
+        width: 20
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 206724f0363c875d0800000000000000
-      internalID: -3064484716200430078
+      spriteID: 8d24b50a1a9c58a80800000000000000
+      internalID: -8465138228555726120
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_10'
+      name: hop_10
       rect:
         serializedVersion: 2
-        x: 1603
-        y: 0
-        width: 96
-        height: 21
+        x: 134
+        y: 42
+        width: 20
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -363,20 +375,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e0b3398a1c3711ae0800000000000000
-      internalID: -1580354718636229874
+      spriteID: 5aa23bca3311aad60800000000000000
+      internalID: 7902147409813383845
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_11'
+      name: hop_11
       rect:
         serializedVersion: 2
-        x: 1763
-        y: 0
-        width: 96
-        height: 21
+        x: 166
+        y: 38
+        width: 20
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -384,19 +396,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2fa2a4f43b10a9740800000000000000
-      internalID: 5159438192747358962
+      spriteID: a82ff5efa6b3c3710800000000000000
+      internalID: 1674278492195254922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_12'
+      name: hop_12
       rect:
         serializedVersion: 2
-        x: 1923
-        y: 0
-        width: 96
+        x: 6
+        y: 6
+        width: 21
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -405,19 +417,82 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 160f0e3929d64d860800000000000000
-      internalID: 7553782951320809569
+      spriteID: 5b2f2eaacaecda980800000000000000
+      internalID: -8525931278545784139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: '[EMPTYING] Shotgun_V1.02_13'
+      name: hop_13
       rect:
         serializedVersion: 2
-        x: 2083
-        y: 0
-        width: 96
+        x: 37
+        y: 6
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca7cc0c1ad5e8110800000000000000
+      internalID: 1265051494643432132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hop_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 6
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a600fbd5d8a4ab90800000000000000
+      internalID: -7231469465178732893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hop_15
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 6
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc3d5da7126c9350800000000000000
+      internalID: 6024798255347219633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hop_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 10
+        width: 21
         height: 21
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -426,8 +501,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87d3de9f0db0cc870800000000000000
-      internalID: 8704345171974503800
+      spriteID: d9bfd3befead5acb0800000000000000
+      internalID: -4853232299443094627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hop_17
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 6
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bcebe93c0f4fa750800000000000000
+      internalID: 6318355716154059957
       vertices: []
       indices: 
       edges: []
@@ -443,20 +539,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      '[EMPTYING] Shotgun_V1.02_0': 2088418356045653586
-      '[EMPTYING] Shotgun_V1.02_1': 2331453189084599509
-      '[EMPTYING] Shotgun_V1.02_10': -1580354718636229874
-      '[EMPTYING] Shotgun_V1.02_11': 5159438192747358962
-      '[EMPTYING] Shotgun_V1.02_12': 7553782951320809569
-      '[EMPTYING] Shotgun_V1.02_13': 8704345171974503800
-      '[EMPTYING] Shotgun_V1.02_2': -5881505666285234546
-      '[EMPTYING] Shotgun_V1.02_3': 6234501854145850383
-      '[EMPTYING] Shotgun_V1.02_4': -6743582618657354386
-      '[EMPTYING] Shotgun_V1.02_5': -4881473313244157614
-      '[EMPTYING] Shotgun_V1.02_6': 4328730101059669720
-      '[EMPTYING] Shotgun_V1.02_7': 7999074827651517121
-      '[EMPTYING] Shotgun_V1.02_8': -8157819355757984313
-      '[EMPTYING] Shotgun_V1.02_9': -3064484716200430078
+      hop_0: 2065597285237618880
+      hop_1: -4948143749771826291
+      hop_10: 7902147409813383845
+      hop_11: 1674278492195254922
+      hop_12: -8525931278545784139
+      hop_13: 1265051494643432132
+      hop_14: -7231469465178732893
+      hop_15: 6024798255347219633
+      hop_16: -4853232299443094627
+      hop_17: 6318355716154059957
+      hop_2: 5810166226096011594
+      hop_3: 1640951914729192560
+      hop_4: -7008355901830759640
+      hop_5: -6687632259457714418
+      hop_6: 8955036706933545414
+      hop_7: 7901989025978898494
+      hop_8: 4213533847948140796
+      hop_9: -8465138228555726120
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

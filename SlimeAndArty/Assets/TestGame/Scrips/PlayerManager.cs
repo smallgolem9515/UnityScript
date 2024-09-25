@@ -14,6 +14,7 @@ public class PlayerManager : PlayerActive
     //public GameObject secondObj; //체크포인트후 리스폰
     //public GameObject gameOver; // 게임오버화면
     public List<AudioClip> audioClip; //소리모음집
+    //0:
 
     [Header("컴포넌트")]
     Rigidbody2D rig2D;
@@ -21,6 +22,8 @@ public class PlayerManager : PlayerActive
     protected AudioSource audioSource;
     BoxCollider2D boxCollider;
     Animator animator;
+    WeaponManager weaponManager;
+
     [Header("플레이어 데이터")]
     Vector3 moveDirection; //OnMove의 값을 저장할 벡터3
     float speed = 3.0f; //움직이는 속도
@@ -29,9 +32,11 @@ public class PlayerManager : PlayerActive
     private int playerHP = 100;
     Vector3 defaltPosition;
     public bool isdie=false;
+
     [Header("점프")]
     public float jumpHeight; //점프높이
     public bool isjump; //더블점프체크
+
     [Header("기즈모")]
     public Color collsionColor = Color.red; //기즈모색
     public Vector2 boxClliderSize; //콜라이더의 크기
@@ -42,14 +47,17 @@ public class PlayerManager : PlayerActive
     public Transform groundCheck; //체크할 위치
     public float groundRound = 0.1f; //체크한위치에서 충돌판정할 원의 사이즈
     public LayerMask groundMask; //레이어마스크는 레이어의 정보를 담고있는 구조체
+
     [Header("애니메이션")]
     public float animationSpeed = 1f;
+
     [Header("-----FadeInFadeOut-----")]
     public Image blackPanel; //검은색 화면
     public float fadeDuration = 1f; //페이드인, 페이드아웃 속도
     public string nextScenName; //다음씬
     static bool isFading = false;
-
+    
+    
     private void Awake()
     {
         if (instance == null)
@@ -74,6 +82,7 @@ public class PlayerManager : PlayerActive
         {
            StartCoroutine(FadeInAndLoadScene());
         }
+        weaponManager = GetComponentInChildren<WeaponManager>();
     }
     private void Update()
     {
@@ -86,7 +95,7 @@ public class PlayerManager : PlayerActive
             transform.Translate(new Vector3(Mathf.Abs(moveDirection.x),moveDirection.y,0)*Time.deltaTime*speed);
         }
         //--------------------------------------------------------------------------------------//
-        mainCam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+        //mainCam.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
         //--------------------------------------------------------------------------------------//
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRound, groundMask);
         if (isGrounded)
@@ -97,6 +106,7 @@ public class PlayerManager : PlayerActive
         animator.speed = animationSpeed; //애니메이션이 재생되는 스피드를 조정
         //AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         //0번째 레이어에 현재 애니메이션 상태 정보를 반환합니다.
+        
     }
     public void PlayerMovement()
     {
@@ -154,7 +164,6 @@ public class PlayerManager : PlayerActive
             {
                 PlayerDamage(10);
             }
-
         }
         if(collision.gameObject.name == "Check")
         {
@@ -165,7 +174,34 @@ public class PlayerManager : PlayerActive
             audioSource.PlayOneShot(audioClip[1]);
             StartCoroutine(FadeInAndLoadScene());
         }
+        if(collision.name == "Pistol")
+        {
+            if(weaponManager.isGetShouGun == true) 
+            {
+                transform.GetChild(0).GetChild(1).gameObject.SetActive(false);
+                weaponManager.isGetShouGun = false;
+            }
+            if (weaponManager.isGetPistol == false)
+            {
+                transform.GetChild(0).GetChild(0).gameObject.SetActive(true);
+                weaponManager.isGetPistol = true;
+            }   
+        }
+        else if(collision.name == "Shotgun")
+        {
+            if(weaponManager.isGetPistol == true) 
+            {
+                transform.GetChild(0).GetChild(0).gameObject.SetActive(false);
+                weaponManager.isGetPistol = false;
+            }
+            if (weaponManager.isGetShouGun == false)
+            {
+                transform.GetChild(0).GetChild(1).gameObject.SetActive(true);
+                weaponManager.isGetShouGun = true;
+            }
+        }
     }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         
@@ -245,20 +281,23 @@ public class PlayerManager : PlayerActive
     }
     public void PlayerFootSound()
     {
-        Collider2D collider2D = Physics2D.OverlapCircle(groundCheck.position, groundRound, groundMask);
-        Debug.Log(collider2D.tag);
-        if(collider2D.CompareTag("Snow"))
+        RaycastHit2D foothit = Physics2D.Raycast(transform.position, transform.right, 2,groundMask);
+        if (foothit.collider)
         {
-            audioSource.PlayOneShot(audioClip[5]);
+            if(foothit.collider.CompareTag("Snow"))
+            {
+                audioSource.PlayOneShot(audioClip[5]);
+            }
+            else
+            {
+                audioSource.PlayOneShot(audioClip[4]);
+            }
         }
         //else if(collider2D.CompareTag(""))
         //{
         //    audioSource.PlayOneShot(audioClip[6]);
         //}
-        else
-        {
-            audioSource.PlayOneShot(audioClip[4]);
-        }
+        
     }
     //페이드인 효과를 처리하고 씬을 로드하는 코루틴
     IEnumerator FadeInAndLoadScene()

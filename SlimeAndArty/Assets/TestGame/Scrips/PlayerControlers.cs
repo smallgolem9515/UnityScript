@@ -62,6 +62,15 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""EKey"",
+                    ""type"": ""Button"",
+                    ""id"": ""c91968bd-148f-43b9-9fc4-f8eab5af11db"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -152,6 +161,17 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""685f5786-7f43-464c-897c-fb707ddf2cd6"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""EKey"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -181,6 +201,7 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
         m_Player_Click = m_Player.FindAction("Click", throwIfNotFound: true);
         m_Player_GunMove = m_Player.FindAction("GunMove", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        m_Player_EKey = m_Player.FindAction("EKey", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -246,6 +267,7 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Click;
     private readonly InputAction m_Player_GunMove;
     private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_EKey;
     public struct PlayerActions
     {
         private @PlayerControlers m_Wrapper;
@@ -254,6 +276,7 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
         public InputAction @Click => m_Wrapper.m_Player_Click;
         public InputAction @GunMove => m_Wrapper.m_Player_GunMove;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        public InputAction @EKey => m_Wrapper.m_Player_EKey;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -275,6 +298,9 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @EKey.started += instance.OnEKey;
+            @EKey.performed += instance.OnEKey;
+            @EKey.canceled += instance.OnEKey;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -291,6 +317,9 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @EKey.started -= instance.OnEKey;
+            @EKey.performed -= instance.OnEKey;
+            @EKey.canceled -= instance.OnEKey;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -323,5 +352,6 @@ public partial class @PlayerControlers: IInputActionCollection2, IDisposable
         void OnClick(InputAction.CallbackContext context);
         void OnGunMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnEKey(InputAction.CallbackContext context);
     }
 }
