@@ -4,25 +4,27 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class PlayerManagerSlime : MonoBehaviour
 {
+    public static PlayerManagerSlime instance;
+
     [Header("플레이어의 수치")]
     public int hp;
-    public float playerSpeed = 5.0f;
     public int count = 6;
-    public float delayTime = 0.3f;
     public int maxCount = 6;
+    public float playerSpeed = 5.0f;
+    public float delayTime = 0.3f;
     public bool isClear = false;
+    public bool isDamage = false;
+    public bool isFire = true;
 
     [Header("외부 참조")]
     public GameObject bulletObj;
     public Transform bulletPos;
-    public bool isFire = true;
 
     Vector3 moveInput;
-    float timer = 0;
     [Header("컴포넌트")]
     Animator animator;
     Rigidbody2D rig2D;
-    public static PlayerManagerSlime instance;
+    
     private void Awake()
     {
         if (instance == null)
@@ -54,15 +56,7 @@ public class PlayerManagerSlime : MonoBehaviour
         float mag = new Vector2(moveInput.x, moveInput.y).magnitude;
         animator.SetFloat("Run", mag);
         transform.Translate(moveInput * playerSpeed*Time.deltaTime);
-        if(!isFire)
-        {
-            timer += Time.deltaTime;
-            if(timer > delayTime)
-            {
-                isFire = true;
-                timer = 0;
-            }
-        }
+
         rig2D.velocity = new Vector2(0, 0); 
     }
     void OnMove(InputValue value)
@@ -81,24 +75,42 @@ public class PlayerManagerSlime : MonoBehaviour
             {
                 Instantiate(bulletObj, bulletPos.transform.position, Quaternion.identity);
                 count--;
-                isFire = false;
+                StartCoroutine(FireDelay(delayTime));
                 animator.SetTrigger("isFireTrigger");
             }
-        }
-        
+        }  
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Monster")
         {
-            hp--;
+            PlayerDamage(1);
             if(collision.gameObject.layer == 6)
             {
                 hp += 2;
                 count += 3;
             }
         }
+    }
+    public void PlayerDamage(int damage)
+    {
+        if (!isDamage)
+        {
+            hp -= damage;
+            isDamage = true;
+            StartCoroutine(DamageDelay());
+        }
 
+    }
+    public IEnumerator DamageDelay()
+    {
+        yield return new WaitForSeconds(0.2f);
+        isDamage = false;
+    }
+    public IEnumerator FireDelay(float time)
+    {
+        yield return new WaitForSeconds(time);
+        isFire = false;
     }
 }

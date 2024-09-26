@@ -9,14 +9,12 @@ public class BulletManager : MonoBehaviour
     Camera maincamera;
     Vector3 mouseFos;
     Rigidbody2D rid2D;
-    WeaponManager weaponManager;
     float bulletSpeed = 30f;
     public LayerMask layer;
 
     private void OnEnable()//활성화되었을때 호출하는 함수
     {
         rid2D = GetComponent<Rigidbody2D>();
-        weaponManager = FindObjectOfType<WeaponManager>();
 
         maincamera = Camera.main;
 
@@ -35,7 +33,7 @@ public class BulletManager : MonoBehaviour
         if (collision.tag != "Player" 
             || collision.tag != "Spike" || collision.gameObject.layer != layer)
         {
-            weaponManager.ReturnBulletToPool(gameObject);
+            WeaponManager.instance.ReturnBulletToPool(gameObject);
             //Destroy(gameObject);
         }
         //gameObject.SetActive(false); //오브젝트 활성화 및 비활성화

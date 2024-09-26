@@ -7,6 +7,19 @@ using UnityEngine.InputSystem;
 
 public class WeaponManager : MonoBehaviour
 {
+    public static WeaponManager instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     private Camera mainCamera; //카메라
     private Vector3 mousePos; //마우스의 위치 저장
 
@@ -29,10 +42,6 @@ public class WeaponManager : MonoBehaviour
     private float rotationZ;
     private Vector2 rayDirection;
 
-    [Header("Sound")]
-    public AudioClip[] SFXClips;
-    AudioSource bulletSound; //발사음
-
     [Header("Weapon Settings")]
     public bool isGetPistol = false;
     public bool isGetShouGun = false;
@@ -48,13 +57,12 @@ public class WeaponManager : MonoBehaviour
     private int shougunBulletCount = 100;
 
     [Header("CameraShake Settings")]
-    public float shakeDuration = 0.5f; //흔들림 지속 시간
-    public float shakeMagnitude = 0.1f; //흔들림 강도
+    public float shakeDuration = 0.1f; //흔들림 지속 시간
+    public float shakeMagnitude = 0.2f; //흔들림 강도
     private Vector3 originalPos; //카메라 원래 위치
 
     void Start()
-    {
-        bulletSound = GetComponent<AudioSource>(); 
+    { 
         mainCamera = Camera.main; // 메인카메라 넣어주기
         bulletPool = new List<GameObject>();
         for(int i = 0; i <  poolSize;i++)
@@ -63,14 +71,7 @@ public class WeaponManager : MonoBehaviour
             bullet.SetActive(false);
             bulletPool.Add(bullet);
         }
-        if (Camera.main != null)
-        {
-            originalPos = Camera.main.transform.localPosition;
-        }
-        else
-        {
-            Debug.Log("메인 카메라를 찾을 수 없습니다. MainCamera Tag를 확인해주세요.");
-        }
+        
     }
     void Update()
     {
@@ -84,8 +85,6 @@ public class WeaponManager : MonoBehaviour
         //Atan() : 함수는 좌표평면에서 수평축으로부터 한 점까지의 각도를 구하는 함수
 
         transform.rotation = Quaternion.Euler(0, 0, rotationZ);
-
-
     }
     //풀에서 비활성화된 총알을 가져오는 함수
     GameObject GetBulletFromPool()
@@ -102,12 +101,12 @@ public class WeaponManager : MonoBehaviour
     }
     void OnClick()
     {
-        StartCoroutine(Shake(shakeDuration, shakeMagnitude));
         StartCoroutine(DelayTime(delayTime));
         if (isFire && PlayerManager.instance.isdie == false)
         {
-            if(isGetPistol && pistolBulletCount > 0)
+            if (isGetPistol && pistolBulletCount > 0)
             {
+                StartCoroutine(Shake(shakeDuration,shakeMagnitude));
                 pistolBulletCount--;
                 FirePistol();
                 delayTime = 0.2f;
@@ -116,6 +115,8 @@ public class WeaponManager : MonoBehaviour
             }
             else if(isGetShouGun && shougunBulletCount > 0)
             {
+                shakeMagnitude = 0.3f;
+                StartCoroutine(Shake(shakeDuration, shakeMagnitude));
                 shougunBulletCount--;
                 FireShotGun();
                 delayTime = 1f;
@@ -123,7 +124,7 @@ public class WeaponManager : MonoBehaviour
                 return;
             }
             isFire = false;
-            bulletSound.PlayOneShot(SFXClips[2]);
+            Soundsmanager.Instance.PlaySFX("BlankHand");
         }       
     }
     void FirePistol()
@@ -151,11 +152,11 @@ public class WeaponManager : MonoBehaviour
             bullet.transform.rotation = bulletPos[0].rotation;
             bullet.SetActive(true);
         }
-        bulletSound.PlayOneShot(SFXClips[0]);
+        Soundsmanager.Instance.PlaySFX("Pistol");
     }
     void FireShotGun()
     {
-        bulletSound.PlayOneShot(SFXClips[1]);
+        Soundsmanager.Instance.PlaySFX("Shotgun");
         for (int i = 0; i < pelletCount; i++)
         {
             rayDirection = (mousePos - bulletPos[1].position).normalized;
@@ -183,24 +184,30 @@ public class WeaponManager : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D> ();
         rb.velocity = Vector2.zero;
     }
-    IEnumerator Shake(float duration, float magnitude)
+    public IEnumerator Shake(float duration, float magnitude)
     {
-        if (Camera.main == null)
+        if (Camera.main != null)
         {
-            Debug.Log("MainCamera가 없습니다.");
+            originalPos = new Vector3(CameraManager.instance.shakePosition.x, CameraManager.instance.shakePosition.y, -10);
+        }
+        else
+        {
+            Debug.Log("메인 카메라를 찾을 수 없습니다. MainCamera Tag를 확인해주세요.");
             yield break;
         }
+        CameraManager.instance.isShake = true;
         float elapsed = 0.0f; //경과 시간 초기화
         while (elapsed < duration)
         {
             float x = Random.Range(-1, 1f) * magnitude;
             float y = Random.Range(-1, 1f) * magnitude;
 
-            mainCamera.transform.localPosition = new Vector3(0, originalPos.y + y, -10);
+            mainCamera.transform.position = new Vector3(originalPos.x, originalPos.y + y, -10);
             elapsed += Time.deltaTime;
             yield return null;
         }
-        mainCamera.transform.localPosition = originalPos;
+        mainCamera.transform.position = originalPos;
+        CameraManager.instance.isShake = false;
     }
     IEnumerator DelayTime(float time)
     {

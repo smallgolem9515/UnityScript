@@ -539,7 +539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &263986029
 Animator:
   serializedVersion: 7
@@ -828,13 +828,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eceb071808fc9346b37bea82f1b3c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClip:
-  - {fileID: 8300000, guid: 6a17135f1e19a034798a7188b5ccc213, type: 3}
-  - {fileID: 8300000, guid: 4fd579267e820c54fa84f15ee8da0fa2, type: 3}
-  - {fileID: 8300000, guid: c198c9de66b38db418918b79b59c315b, type: 3}
-  - {fileID: 8300000, guid: 28fa6abca7511294ebd43d4d2df5bbe9, type: 3}
-  - {fileID: 8300000, guid: eae30613ebe8aac42afe31047d0931d1, type: 3}
-  - {fileID: 8300000, guid: ae492aaae97ef8d44b4ff9a31b04267a, type: 3}
   CoinCount: 0
   isdie: 0
   jumpHeight: 4
@@ -1225,7 +1218,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &402227649
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1360,7 +1353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &533469790
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1891,9 +1884,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletObj: {fileID: 7766187259439823283, guid: aabec2b9cbf240548af5d989391554c9, type: 3}
-  bulletPos: {fileID: 778033276}
+  bulletPos:
+  - {fileID: 0}
   isFire: 0
   poolSize: 100
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  isGetPistol: 0
+  isGetShouGun: 0
+  weaponMask:
+    serializedVersion: 2
+    m_Bits: 0
+  pelletCount: 10
+  spreaAngle: 30
+  knockbackForce: 10
+  shakeDuration: 0.1
+  shakeMagnitude: 0.2
 --- !u!1 &843702440
 GameObject:
   m_ObjectHideFlags: 0
@@ -5228,7 +5235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1158681104
 MonoBehaviour:
   m_ObjectHideFlags: 0

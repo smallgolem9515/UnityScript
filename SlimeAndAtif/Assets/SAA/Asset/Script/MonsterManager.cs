@@ -5,7 +5,7 @@ using UnityEngine;
 public class MonsterManager : MonoBehaviour
 {
     public int hp;
-    bool isJelly;
+    bool isJelly = false;
 
     void Start()
     {

@@ -13,26 +13,23 @@ public class PlayerManager : PlayerActive
     //public GameObject defaultObj; //리스폰장소
     //public GameObject secondObj; //체크포인트후 리스폰
     //public GameObject gameOver; // 게임오버화면
-    public List<AudioClip> audioClip; //소리모음집
-    //0:
 
     [Header("컴포넌트")]
     Rigidbody2D rig2D;
     Camera mainCam;
-    protected AudioSource audioSource;
     BoxCollider2D boxCollider;
     Animator animator;
     WeaponManager weaponManager;
-
-    [Header("플레이어 데이터")]
+    #region 플레이어 데이터
+    [Header("-----PlayerDate-----")]
+    public int CoinCount = 0;
     Vector3 moveDirection; //OnMove의 값을 저장할 벡터3
     float speed = 3.0f; //움직이는 속도
-    public int CoinCount = 0;
     bool isDamage = false; //데미지체크
     private int playerHP = 100;
     Vector3 defaltPosition;
     public bool isdie=false;
-
+    #endregion
     [Header("점프")]
     public float jumpHeight; //점프높이
     public bool isjump; //더블점프체크
@@ -40,14 +37,14 @@ public class PlayerManager : PlayerActive
     [Header("기즈모")]
     public Color collsionColor = Color.red; //기즈모색
     public Vector2 boxClliderSize; //콜라이더의 크기
-
-    [Header("그라운드체크")]
+    #region 그라운드 체크
+    [Header("-----GroundCheck------")]
     public bool isCheck = false; //체크포인트 참조
     private bool isGrounded = false; //땅체크
     public Transform groundCheck; //체크할 위치
     public float groundRound = 0.1f; //체크한위치에서 충돌판정할 원의 사이즈
     public LayerMask groundMask; //레이어마스크는 레이어의 정보를 담고있는 구조체
-
+    #endregion
     [Header("애니메이션")]
     public float animationSpeed = 1f;
 
@@ -63,6 +60,7 @@ public class PlayerManager : PlayerActive
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -74,7 +72,6 @@ public class PlayerManager : PlayerActive
         boxCollider = GetComponent<BoxCollider2D>();
         rig2D = GetComponent<Rigidbody2D>();
         mainCam = Camera.main;
-        audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
         defaltPosition = transform.position;
         Debug.Log(isFading);
@@ -135,13 +132,13 @@ public class PlayerManager : PlayerActive
         if(isGrounded)
         {
             rig2D.velocity = new Vector2(rig2D.velocity.x, jumpHeight);
-            audioSource.PlayOneShot(audioClip[1]);
+            Soundsmanager.Instance.PlaySFX("Jump");
             animator.SetTrigger("isJump");
         }
         else if(isjump)
         {
             rig2D.velocity = new Vector2(rig2D.velocity.x, jumpHeight);
-            audioSource.PlayOneShot(audioClip[2]);
+            Soundsmanager.Instance.PlaySFX("DoubleJump");
             isjump = false;
             animator.SetTrigger("isJump");
         }
@@ -171,7 +168,7 @@ public class PlayerManager : PlayerActive
         }
         if(collision.tag == "Door" && isFading == false)
         {
-            audioSource.PlayOneShot(audioClip[1]);
+            Soundsmanager.Instance.PlaySFX("Coin");
             StartCoroutine(FadeInAndLoadScene());
         }
         if(collision.name == "Pistol")
@@ -260,16 +257,19 @@ public class PlayerManager : PlayerActive
     public void CoinUp(int coin)
     {
         CoinCount += coin;
-        audioSource.PlayOneShot(audioClip[3]);
+        Soundsmanager.Instance.PlaySFX("Coin");
         Debug.Log("Player함수 CoinUp 실행");
     }
     public void PlayerDamage(int damage)
     {
+        weaponManager.shakeDuration = 0.1f;
+        weaponManager.shakeMagnitude = 0.3f;
+        StartCoroutine(weaponManager.Shake(weaponManager.shakeDuration, weaponManager.shakeMagnitude));
         if(!isDamage)
         {
             playerHP -= damage;
             animator.SetTrigger("isDamage");
-            audioSource.PlayOneShot(audioClip[0]);
+            Soundsmanager.Instance.PlaySFX("PlayerDamage");
             isDamage = true;
             StartCoroutine(DamageCount());
             Debug.Log(playerHP);
@@ -286,11 +286,11 @@ public class PlayerManager : PlayerActive
         {
             if(foothit.collider.CompareTag("Snow"))
             {
-                audioSource.PlayOneShot(audioClip[5]);
+                Soundsmanager.Instance.PlaySFX("DefaltFoot");
             }
             else
             {
-                audioSource.PlayOneShot(audioClip[4]);
+                Soundsmanager.Instance.PlaySFX("SnowFoot");
             }
         }
         //else if(collider2D.CompareTag(""))

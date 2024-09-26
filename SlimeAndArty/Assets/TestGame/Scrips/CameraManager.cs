@@ -4,6 +4,19 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
+    public static CameraManager instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     //Player Transform을 받는 변수
     public Transform playerPosition;
 
@@ -21,11 +34,13 @@ public class CameraManager : MonoBehaviour
     //카메라의 반경
     private float cameraHalfWidth;
     private float cameraHalfHeight;
+
+    public bool isShake = false;
+    public Vector3 shakePosition;
     // Start is called before the first frame update
     void Start()
     {
         backGroundRenderer = backGround.GetComponent<Renderer>();
-
         //카메라의 시야에 따른 절반 크기를 계산
         Camera mainCam = Camera.main;
         cameraHalfHeight = mainCam.orthographicSize; //카메라의 세로 반경
@@ -43,16 +58,19 @@ public class CameraManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        Vector3 newPosition =  transform.position;
+        if(!isShake)
+        {
+            Vector3 newPosition = transform.position;
 
-        newPosition.x = playerPosition.position.x;
-        newPosition.y = playerPosition.position.y;
+            newPosition.x = playerPosition.position.x;
+            newPosition.y = playerPosition.position.y;
 
-        newPosition.x = Mathf.Clamp(newPosition.x,minPosition.x,maxPosition.x);
-        newPosition.y = Mathf.Clamp(newPosition.y,minPosition.y,maxPosition.y);
+            newPosition.x = Mathf.Clamp(newPosition.x, minPosition.x, maxPosition.x);
+            newPosition.y = Mathf.Clamp(newPosition.y, minPosition.y, maxPosition.y);
 
-        transform.position = newPosition;
-
-        Camera.main.fieldOfView = cameraFOV;
+            transform.position = newPosition;
+            shakePosition = newPosition;
+            Camera.main.fieldOfView = cameraFOV;
+        }
     }
 }
