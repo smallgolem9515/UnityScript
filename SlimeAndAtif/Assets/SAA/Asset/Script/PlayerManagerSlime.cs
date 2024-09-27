@@ -8,7 +8,8 @@ public class PlayerManagerSlime : MonoBehaviour
 
     [Header("플레이어의 수치")]
     public int hp;
-    public int count = 6;
+    public int maxHP = 6;
+    public int count;
     public int maxCount = 6;
     public float playerSpeed = 5.0f;
     public float delayTime = 0.3f;
@@ -19,7 +20,7 @@ public class PlayerManagerSlime : MonoBehaviour
     [Header("외부 참조")]
     public GameObject bulletObj;
     public Transform bulletPos;
-
+    Vector2 move4Posi;
     Vector3 moveInput;
     [Header("컴포넌트")]
     Animator animator;
@@ -38,12 +39,25 @@ public class PlayerManagerSlime : MonoBehaviour
     }
     void Start()
     {
+        hp = maxHP;
+        count = maxCount;
         animator = GetComponent<Animator>();
         rig2D = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
     void Update()
+    {
+        move4Posi = transform.position;
+        PlayerFlip();
+        float mag = new Vector2(moveInput.x, moveInput.y).magnitude;
+        animator.SetFloat("Run", mag);
+        transform.Translate(moveInput * playerSpeed*Time.deltaTime);
+
+        rig2D.velocity = new Vector2(0, 0); 
+    }
+    void PlayerFlip()
     {
         if (moveInput.x > 0)
         {
@@ -53,11 +67,10 @@ public class PlayerManagerSlime : MonoBehaviour
         {
             transform.localScale = new Vector3(-7, 7, 7);
         }
-        float mag = new Vector2(moveInput.x, moveInput.y).magnitude;
-        animator.SetFloat("Run", mag);
-        transform.Translate(moveInput * playerSpeed*Time.deltaTime);
-
-        rig2D.velocity = new Vector2(0, 0); 
+    }
+    void BulletPosition(float x, float y)
+    {
+        move4Posi += new Vector2(x*1, y*1);
     }
     void OnMove(InputValue value)
     {
@@ -73,8 +86,10 @@ public class PlayerManagerSlime : MonoBehaviour
         {
             if (count > 0)
             {
-                Instantiate(bulletObj, bulletPos.transform.position, Quaternion.identity);
+                BulletPosition(moveInput.x, moveInput.y);
+                Instantiate(bulletObj, move4Posi, Quaternion.identity);
                 count--;
+                isFire = false;
                 StartCoroutine(FireDelay(delayTime));
                 animator.SetTrigger("isFireTrigger");
             }
@@ -111,6 +126,6 @@ public class PlayerManagerSlime : MonoBehaviour
     public IEnumerator FireDelay(float time)
     {
         yield return new WaitForSeconds(time);
-        isFire = false;
+        isFire = true;
     }
 }

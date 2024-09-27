@@ -31,6 +31,7 @@ public class KeyManager : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            Soundsmanager.Instance.PlaySFX("Key");
             door1 = true;
             gameObject.SetActive(false);
         }

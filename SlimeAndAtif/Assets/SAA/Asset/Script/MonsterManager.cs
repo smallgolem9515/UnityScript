@@ -21,6 +21,7 @@ public class MonsterManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
+            Particlemanager.instance.PlayParticle("GreenEffect1", collision.gameObject.transform.position, gameObject.layer+1);
             hp--;
             if (hp <= 0)
             {

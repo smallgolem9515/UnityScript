@@ -10,9 +10,6 @@ public class PlayerRound : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
-        
-        
-        
     }
 
     // Update is called once per frame

@@ -13,7 +13,6 @@ public class WeaponManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -61,9 +60,11 @@ public class WeaponManager : MonoBehaviour
     public float shakeMagnitude = 0.2f; //흔들림 강도
     private Vector3 originalPos; //카메라 원래 위치
 
+    SpriteRenderer weaponRenderer;
     void Start()
     { 
         mainCamera = Camera.main; // 메인카메라 넣어주기
+        weaponRenderer = transform.GetChild(0).GetComponent<SpriteRenderer>();
         bulletPool = new List<GameObject>();
         for(int i = 0; i <  poolSize;i++)
         {
@@ -71,7 +72,6 @@ public class WeaponManager : MonoBehaviour
             bullet.SetActive(false);
             bulletPool.Add(bullet);
         }
-        
     }
     void Update()
     {
@@ -101,9 +101,11 @@ public class WeaponManager : MonoBehaviour
     }
     void OnClick()
     {
-        StartCoroutine(DelayTime(delayTime));
+        
         if (isFire && PlayerManager.instance.isdie == false)
         {
+            StartCoroutine(DelayTime(delayTime));
+           
             if (isGetPistol && pistolBulletCount > 0)
             {
                 StartCoroutine(Shake(shakeDuration,shakeMagnitude));
@@ -144,7 +146,8 @@ public class WeaponManager : MonoBehaviour
         }
         // 디버그용 레이 시각화 (Scene 창에서 레이 경로를 확인)
         Debug.DrawRay(bulletPos[0].position, rayDirection * rayDistance, Color.red,0.2f);
-
+        ParticleManager.instance.PlayParticle("FireEffect", bulletPos[0].position);
+        Debug.Log("파티클");
         GameObject bullet = GetBulletFromPool();
         if (bullet != null)
         {
@@ -157,6 +160,7 @@ public class WeaponManager : MonoBehaviour
     void FireShotGun()
     {
         Soundsmanager.Instance.PlaySFX("Shotgun");
+        ParticleManager.instance.PlayParticle("FireEffect2", bulletPos[1].position);
         for (int i = 0; i < pelletCount; i++)
         {
             rayDirection = (mousePos - bulletPos[1].position).normalized;

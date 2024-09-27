@@ -58,11 +58,6 @@ public class Soundsmanager : MonoBehaviour
             }
         }
     }
-    private void Start()
-    {
-        string SceneName = SceneManager.GetActiveScene().name; //현재 씬의 이름
-        OnSceneLoaded(SceneName);
-    }
     public void OnSceneLoaded(string sceneName) //씬 이름을 받아서 BGM을 설정하는 함수
     {
         //씬 이름에 따라 배경음악을 재생하는 코드
@@ -153,9 +148,9 @@ public class Soundsmanager : MonoBehaviour
 
         for(float t = 0;t < duration;t += Time.deltaTime)
         {
-            BGMaudioSourse.volume = Mathf.Lerp(startVolume,1f,t/duration);
+            BGMaudioSourse.volume = Mathf.Lerp(startVolume,0.2f,t/duration);
             yield return null;
         }
-        BGMaudioSourse.volume= 1f; //최종적으로 볼륨을 1로 설정
+        BGMaudioSourse.volume= 0.2f;
     }
 }

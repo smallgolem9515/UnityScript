@@ -52,9 +52,7 @@ public class PlayerManager : PlayerActive
     public Image blackPanel; //검은색 화면
     public float fadeDuration = 1f; //페이드인, 페이드아웃 속도
     public string nextScenName; //다음씬
-    static bool isFading = false;
-    
-    
+    public bool isFading = false;
     private void Awake()
     {
         if (instance == null)
@@ -74,11 +72,6 @@ public class PlayerManager : PlayerActive
         mainCam = Camera.main;
         animator = GetComponent<Animator>();
         defaltPosition = transform.position;
-        Debug.Log(isFading);
-        if(isFading)
-        {
-           StartCoroutine(FadeInAndLoadScene());
-        }
         weaponManager = GetComponentInChildren<WeaponManager>();
     }
     private void Update()
@@ -168,7 +161,7 @@ public class PlayerManager : PlayerActive
         }
         if(collision.tag == "Door" && isFading == false)
         {
-            Soundsmanager.Instance.PlaySFX("Coin");
+            Soundsmanager.Instance.PlaySFX("Warp");
             StartCoroutine(FadeInAndLoadScene());
         }
         if(collision.name == "Pistol")
@@ -302,21 +295,12 @@ public class PlayerManager : PlayerActive
     //페이드인 효과를 처리하고 씬을 로드하는 코루틴
     IEnumerator FadeInAndLoadScene()
     {
-        if (!isFading)
-        {
-            isFading = true;
-            yield return StartCoroutine(FadeImage(0, 1, fadeDuration)); //패널 페이드인
-            //알파값이 0이면 투명 1이면 검은색
-            SceneManager.LoadScene(nextScenName); //씬 로드
-
-        }
-        else if (isFading)
-        {
-            yield return StartCoroutine(FadeImage(1,0,fadeDuration)); //씬 로드 후 페이드 아웃
-            //예시일뿐 현재는 실행되지않는다.
-            isFading=false; //페이드 종료 후 상태 초기화
-        }
-
+        
+        yield return StartCoroutine(FadeImage(0, 1, fadeDuration)); //패널 페이드인
+        //알파값이 0이면 투명 1이면 검은색
+        isFading = true;
+        yield return StartCoroutine(FadeImage(1,0,fadeDuration)); //씬 로드 후 페이드 아웃
+        isFading=false;       
     }
     //Image의 Alpha 값을 조절하여 페이드 효과를 처리하는 코루틴
     IEnumerator FadeImage(float startAlpha, float endAlpha, float duration)
@@ -341,5 +325,12 @@ public class PlayerManager : PlayerActive
         //최종적으로 알파 값 설정
         panelColor.a = endAlpha;
         blackPanel.color = panelColor;
+        if (isFading)
+        {
+            SceneManager.LoadScene(nextScenName); //씬 로드
+            string SceneName = SceneManager.GetActiveScene().name; //현재 씬의 이름
+            Debug.Log(SceneName);
+            Soundsmanager.Instance.OnSceneLoaded(SceneName);
+        }
     }
 }

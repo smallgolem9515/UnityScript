@@ -19,6 +19,7 @@ public class BulletManager : MonoBehaviour
         Vector3 diretion = mousePoint - transform.position;
         Vector3 rotation = transform.position - mousePoint;
         rig2D.velocity = new Vector2(diretion.x, diretion.y).normalized * bulSpeed;
+        //rig2D.velocity = transform.position * bulSpeed;
         float rotationZ = Mathf.Atan2(rotation.y,rotation.x)*Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0,0,rotationZ);
 
@@ -52,6 +53,7 @@ public class BulletManager : MonoBehaviour
         {
             if (collision.gameObject.tag == "Monster")
             {
+                
                 Destroy(gameObject);
             }
             else if (collision.gameObject.tag != "Player")
