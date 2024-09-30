@@ -73,6 +73,7 @@ public class PlayerManager : PlayerActive
         animator = GetComponent<Animator>();
         defaltPosition = transform.position;
         weaponManager = GetComponentInChildren<WeaponManager>();
+        SceneContoller.instance.OnSceneLoaded(SceneManager.GetActiveScene().name);
     }
     private void Update()
     {
@@ -295,7 +296,6 @@ public class PlayerManager : PlayerActive
     //페이드인 효과를 처리하고 씬을 로드하는 코루틴
     IEnumerator FadeInAndLoadScene()
     {
-        
         yield return StartCoroutine(FadeImage(0, 1, fadeDuration)); //패널 페이드인
         //알파값이 0이면 투명 1이면 검은색
         isFading = true;
@@ -330,7 +330,7 @@ public class PlayerManager : PlayerActive
             SceneManager.LoadScene(nextScenName); //씬 로드
             string SceneName = SceneManager.GetActiveScene().name; //현재 씬의 이름
             Debug.Log(SceneName);
-            Soundsmanager.Instance.OnSceneLoaded(SceneName);
+            SceneContoller.instance.OnSceneLoaded(SceneName);
         }
     }
 }

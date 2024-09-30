@@ -30,8 +30,7 @@ public class BulletManager : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log(collision.gameObject.layer);
-        if (collision.tag != "Player" 
-            || collision.tag != "Spike" || collision.gameObject.layer != layer)
+        if (collision.tag != "Spike")
         {
             WeaponManager.instance.ReturnBulletToPool(gameObject);
             //Destroy(gameObject);

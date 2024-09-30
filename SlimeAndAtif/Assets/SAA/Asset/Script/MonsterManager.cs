@@ -25,7 +25,7 @@ public class MonsterManager : MonoBehaviour
             hp--;
             if (hp <= 0)
             {
-                gameObject.layer = 6;
+                gameObject.tag = "Jelly";
                 isJelly = true;
             }
         }

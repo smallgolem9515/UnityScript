@@ -9,6 +9,7 @@ public class PlayerManagerSlime : MonoBehaviour
     [Header("플레이어의 수치")]
     public int hp;
     public int maxHP = 6;
+    public int limitHP = 12;
     public int count;
     public int maxCount = 6;
     public float playerSpeed = 5.0f;
@@ -25,7 +26,8 @@ public class PlayerManagerSlime : MonoBehaviour
     [Header("컴포넌트")]
     Animator animator;
     Rigidbody2D rig2D;
-    
+    public float shakeDuration = 0.1f; //흔들림 지속 시간
+    public float shakeMagnitude = 0.2f; //흔들림 강도
     private void Awake()
     {
         if (instance == null)
@@ -95,28 +97,46 @@ public class PlayerManagerSlime : MonoBehaviour
             }
         }  
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Monster")
+        //if(collision.gameObject.tag == "Monster")
+        //{
+        //    PlayerDamage(1);
+        //}
+        if (collision.gameObject.tag == "Jelly")
         {
-            PlayerDamage(1);
-            if(collision.gameObject.layer == 6)
+            hp += 2;
+            count += 3;
+        }
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if(!isDamage)
+        {
+            if (collision.gameObject.tag == "Monster")
             {
-                hp += 2;
-                count += 3;
+                PlayerDamage(1);
             }
         }
+        
     }
     public void PlayerDamage(int damage)
     {
         if (!isDamage)
         {
-            hp -= damage;
             isDamage = true;
+            hp -= damage;
+            if (hp % 2 == 0)
+            {
+                StartCoroutine(UIManager.instance.EmptyHeart(hp / 2));
+            }
+            else
+            {
+                StartCoroutine(UIManager.instance.HalfHeart(hp / 2));
+            }
+            StartCoroutine(CameraManager.instance.Shake(shakeDuration, shakeMagnitude));
             StartCoroutine(DamageDelay());
         }
-
     }
     public IEnumerator DamageDelay()
     {

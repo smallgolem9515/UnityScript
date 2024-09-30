@@ -58,22 +58,7 @@ public class Soundsmanager : MonoBehaviour
             }
         }
     }
-    public void OnSceneLoaded(string sceneName) //씬 이름을 받아서 BGM을 설정하는 함수
-    {
-        //씬 이름에 따라 배경음악을 재생하는 코드
-        if (sceneName == "GameScene")
-        {
-            PlayBGM("Level1", 1f);
-        }
-        else if(sceneName == "GameScene2")
-        {
-            PlayBGM("Level2", 1f);
-        }
-        else
-        {
-            StopBGM();
-        }
-    }
+    
     public void PlayBGM(string name,float fadeDuration) //배경음 재생함수
     {
         if(BGMClips.ContainsKey(name))

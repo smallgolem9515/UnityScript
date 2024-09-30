@@ -8,7 +8,7 @@ public class MapManager : MonoBehaviour
     Vector3 defaltPosi;
     int xSize = 13;
     int ySize = 6;
-    
+
     void Start()
     {
         mainCam = Camera.main;
@@ -16,24 +16,27 @@ public class MapManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-        if(PlayerManagerSlime.instance.transform.position.x >defaltPosi.x+xSize)
+        if(CameraManager.instance.isShake == false)
         {
-            PlayerMoveMap(true,xSize);
-        }
-        else if (PlayerManagerSlime.instance.transform.position.x <defaltPosi.x - xSize)
-        {
-            PlayerMoveMap(true,-xSize);
-        }
-        else if (PlayerManagerSlime.instance.transform.position.y > defaltPosi.y + ySize)
-        {
-            PlayerMoveMap(false,ySize);
-        }
-        else if (PlayerManagerSlime.instance.transform.position.y < defaltPosi.y - ySize)
-        {
-            PlayerMoveMap(false,-ySize);
-        }
+            if (PlayerManagerSlime.instance.transform.position.x > defaltPosi.x + xSize)
+            {
+                PlayerMoveMap(true, xSize);
+            }
+            else if (PlayerManagerSlime.instance.transform.position.x < defaltPosi.x - xSize)
+            {
+                PlayerMoveMap(true, -xSize);
+            }
+            else if (PlayerManagerSlime.instance.transform.position.y > defaltPosi.y + ySize)
+            {
+                PlayerMoveMap(false, ySize);
+            }
+            else if (PlayerManagerSlime.instance.transform.position.y < defaltPosi.y - ySize)
+            {
+                PlayerMoveMap(false, -ySize);
+            }
+        }      
     }
     void PlayerMoveMap(bool XY,int plusMinus)
     {
@@ -55,4 +58,6 @@ public class MapManager : MonoBehaviour
     {
         PlayerManagerSlime.instance.isClear = false;
     }
+    
+
 }
