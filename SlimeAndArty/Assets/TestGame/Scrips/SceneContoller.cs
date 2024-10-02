@@ -34,23 +34,27 @@ public class SceneContoller : MonoBehaviour
     }
     public void OnSceneLoaded(string sceneName) //씬 이름을 받아서 BGM을 설정하는 함수
     {
+        if(Soundsmanager.Instance.BGMaudioSourse.isActiveAndEnabled)
+        {
+            if (sceneName == "GameScene")
+            {
+                Soundsmanager.Instance.PlayBGM("Level1", 1f);
+            }
+            else if (sceneName == "GameScene2")
+            {
+                Soundsmanager.Instance.PlayBGM("Level2", 1f);
+            }
+            else if (sceneName == "Menu")
+            {
+                Soundsmanager.Instance.PlayBGM("Menu", 1f);
+            }
+            else
+            {
+                Soundsmanager.Instance.StopBGM();
+            }
+        }
         //씬 이름에 따라 배경음악을 재생하는 코드
-        if (sceneName == "GameScene")
-        {
-            Soundsmanager.Instance.PlayBGM("Level1", 1f);
-        }
-        else if (sceneName == "GameScene2")
-        {
-            Soundsmanager.Instance.PlayBGM("Level2", 1f);
-        }
-        else if(sceneName == "Menu")
-        {
-            Soundsmanager.Instance.PlayBGM("Menu", 1f);
-        }
-        else
-        {
-            Soundsmanager.Instance.StopBGM();
-        }
+        
     }
     IEnumerator LogoStart()
     {

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -26,7 +27,10 @@ public class UIManager : MonoBehaviour
     public Sprite fullHeart;
     public Sprite halfHeart;
     public Sprite emptyHeart;
-    // Start is called before the first frame update
+
+    public GameObject pauseMenu;
+    private bool isPasue = false;
+
     void Start()
     {
         for (int i = 0; i < PlayerManagerSlime.instance.limitHP; i++)
@@ -40,7 +44,8 @@ public class UIManager : MonoBehaviour
                 heartObj[i / 2].SetActive(false);
             }
         }
-        
+        pauseMenu.SetActive(false);
+
     }
     void Update()
     {      
@@ -65,5 +70,43 @@ public class UIManager : MonoBehaviour
         Destroy(heart);
         heartObj[hp].SetActive(true);
         heartObj[hp].GetComponent<Image>().sprite = emptyHeart;
+    }
+    void OnPauseMenu()
+    {
+        if (!isPasue)
+        {
+            PauseGame();
+        }
+        else
+        {
+            OnContinue();
+        }
+    }
+    void PauseGame()
+    {
+        isPasue = true;
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0;
+        Debug.Log("PauseMenu");
+    }
+    void OnContinue()
+    {
+        isPasue=false;
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+        Debug.Log("Continue");
+    }
+    public void OnRestart()
+    {
+        isPasue = false;
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("ReStart");
+    }
+    void OnQuit()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
     }
 }

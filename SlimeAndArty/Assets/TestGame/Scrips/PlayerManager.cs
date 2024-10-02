@@ -73,10 +73,12 @@ public class PlayerManager : PlayerActive
         animator = GetComponent<Animator>();
         defaltPosition = transform.position;
         weaponManager = GetComponentInChildren<WeaponManager>();
-        SceneContoller.instance.OnSceneLoaded(SceneManager.GetActiveScene().name);
+        Soundsmanager.Instance.PlayBGM("Level1", 1.0f);
+        
     }
     private void Update()
     {
+        //SceneContoller.instance.OnSceneLoaded(SceneManager.GetActiveScene().name);
         float mag = new Vector2(moveDirection.x, moveDirection.y).magnitude;
         animator.SetFloat("Run", mag);
         //--------------------------------------------------------------------------------------//
@@ -97,7 +99,6 @@ public class PlayerManager : PlayerActive
         animator.speed = animationSpeed; //애니메이션이 재생되는 스피드를 조정
         //AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
         //0번째 레이어에 현재 애니메이션 상태 정보를 반환합니다.
-        
     }
     public void PlayerMovement()
     {

@@ -4,70 +4,134 @@ using UnityEngine;
 
 public class MonsterManager : MonoBehaviour
 {
-    AudioSource m_AudioSource;
-    Rigidbody2D m_Rigidbody2D;
-    public float speed = 2.0f;
-    public float maxDistance = 3.0f;
-    public int direction = 1;
-    Vector3 startPosi;
-    public int moveList;
-    // Start is called before the first frame update
+    public float monsterHP = 30;
+    public Transform target;
+    public float attackRange = 1.0f;
+    public float attackCoolDown = 2.0f;
+    private float nextAttackTime = 0f;
+    private float trackingRange = 5.0f;
+    private float evadeRange = 5.0f;
+    public bool isDamage = false;
+
+    public Transform[] patrolPoints; //순찰 경로의 지점들
+    public float moveSpeed = 2.0f; //이동속도
+    private int currentPoint = 0; //현재 순찰 지점 인덱스
+    Animator animator;
+
     void Start()
     {
-        m_AudioSource = GetComponent<AudioSource>();
-        m_Rigidbody2D = GetComponent<Rigidbody2D>();
-        startPosi = transform.position;
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (moveList == 1)
-        {
-            WidthMove();
-        }
-        else if (moveList == 2)
-        {
-            LengthMove();
-        }
-        else if (moveList == 3)
-        {
-            WidthMove();
-            LengthMove();
-        }
         
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
+       
+        if(distanceToTarget >= trackingRange)
+        {
+            if (patrolPoints.Length > 0)
+            {
+                Patrol();
+            }
+        }
+        else
+        {
+            AttackAndTraking();
+        }
+        if (moveSpeed > 0)
+        {
+            animator.SetBool("isMoving", true);
+        }
+        else
+        {
+            animator.SetBool("isMoving", false);
+        }
+        if (monsterHP < 2.0f)
+        {
+            Evade();
+        }
+        if(WeaponManager.instance.isShotDamage)
+        {
+            if(!isDamage)
+            {
+                monsterHP -= 10;
+                Debug.Log(monsterHP);
+                isDamage = true;
+                StartCoroutine(DamageCount());
+                animator.SetTrigger("isHurt");
+                if (monsterHP <= 0)
+                {
+                    animator.SetTrigger("isDie");
+                    gameObject.SetActive(false);
+                }
+            }
+        }
     }
-    void WidthMove()
+    private void OnDrawGizmosSelected()
     {
-        if (transform.position.x > startPosi.x + maxDistance)
-        {
-            direction = -1;
-        }
-        else if (transform.position.x < startPosi.x - maxDistance)
-        {
-            direction = 1;
-        }
-        transform.position += new Vector3(direction, 0, 0) * speed * Time.deltaTime;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange); //공격범위
     }
-    void LengthMove()
+    void Attack()
     {
-        if (transform.position.y > startPosi.y + maxDistance)
-        {
-            direction = -1;
-        }
-        else if (transform.position.y < startPosi.y - maxDistance)
-        {
-            direction = 1;
-        }
+        Debug.Log("플레이어 공격");
+        animator.SetTrigger("isAttack");
+        PlayerManager.instance.PlayerDamage(10);
+    }
+    void Evade()
+    {
+        Debug.Log("도망중");
+        Vector3 direction = (transform.position - target.position).normalized;
+        transform.position += direction * moveSpeed * Time.deltaTime;
+    }
+    void Patrol()
+    {
+        Transform targetPoint = patrolPoints[currentPoint]; //목표 포인트 지정
+        Vector3 direction = (targetPoint.position - transform.position).normalized; //방향 지정
+        transform.position += direction * moveSpeed * Time.deltaTime; //목표로 이동
 
-        //m_Rigidbody2D.AddForce(new Vector2(direction,direction)*speed * Time.deltaTime, ForceMode2D.Impulse);
-        transform.position += new Vector3(0, direction, 0) * speed * Time.deltaTime;
+        if (Vector3.Distance(transform.position, targetPoint.position) < 0.2f)
+        {
+            StartCoroutine(StopMove());
+            currentPoint = (currentPoint + 1) % patrolPoints.Length;
+        }
+    }
+    void AttackAndTraking()
+    {
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
+        if (distanceToTarget <= attackRange && Time.time >= nextAttackTime)
+        {
+            Attack();
+            nextAttackTime = Time.time + attackCoolDown;
+        }
+        else if (distanceToTarget > attackRange)
+        {
+            Vector3 direction = (target.position - transform.position).normalized;
+            transform.position += direction * moveSpeed * Time.deltaTime;
+        }
+    }
+    IEnumerator StopMove()
+    {
+        moveSpeed = 0;
+        animator.Play("SlimeIdle");
+        yield return new WaitForSeconds(3.0f);
+        moveSpeed = 2.0f;
+    }
+    IEnumerator DamageCount()//무적시간
+    {
+        yield return new WaitForSeconds(0.2f);
+        isDamage = false;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Bullet")
+        if(collision.tag == "Bullet")
         {
-            m_AudioSource.Play();
-            Destroy(gameObject, 0.5f);
-        }  
+            monsterHP -= 10;
+            if(monsterHP <= 0)
+            {
+                Destroy(gameObject);
+            }
+        }
     } 
 }

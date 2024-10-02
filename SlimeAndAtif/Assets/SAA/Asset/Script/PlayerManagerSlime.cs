@@ -12,6 +12,7 @@ public class PlayerManagerSlime : MonoBehaviour
     public int limitHP = 12;
     public int count;
     public int maxCount = 6;
+    public float playerAttackPower = 1f;
     public float playerSpeed = 5.0f;
     public float delayTime = 0.3f;
     public bool isClear = false;
@@ -20,9 +21,8 @@ public class PlayerManagerSlime : MonoBehaviour
 
     [Header("외부 참조")]
     public GameObject bulletObj;
-    public Transform bulletPos;
-    Vector2 move4Posi;
     Vector3 moveInput;
+    public Vector2 shotPosi;
     [Header("컴포넌트")]
     Animator animator;
     Rigidbody2D rig2D;
@@ -51,7 +51,6 @@ public class PlayerManagerSlime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        move4Posi = transform.position;
         PlayerFlip();
         float mag = new Vector2(moveInput.x, moveInput.y).magnitude;
         animator.SetFloat("Run", mag);
@@ -70,10 +69,6 @@ public class PlayerManagerSlime : MonoBehaviour
             transform.localScale = new Vector3(-7, 7, 7);
         }
     }
-    void BulletPosition(float x, float y)
-    {
-        move4Posi += new Vector2(x*1, y*1);
-    }
     void OnMove(InputValue value)
     {
         Vector2 vec2 = value.Get<Vector2>();
@@ -82,20 +77,20 @@ public class PlayerManagerSlime : MonoBehaviour
             moveInput = new Vector3(vec2.x, vec2.y, 0);
         }        
     }
-    void OnFire()
+    void OnShot(InputValue value)
     {
-        if (isFire)
+        shotPosi = value.Get<Vector2>();
+        if(isFire)
         {
             if (count > 0)
             {
-                BulletPosition(moveInput.x, moveInput.y);
-                Instantiate(bulletObj, move4Posi, Quaternion.identity);
+                Instantiate(bulletObj, transform.position, Quaternion.identity);
                 count--;
                 isFire = false;
                 StartCoroutine(FireDelay(delayTime));
                 animator.SetTrigger("isFireTrigger");
             }
-        }  
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -103,22 +98,18 @@ public class PlayerManagerSlime : MonoBehaviour
         //{
         //    PlayerDamage(1);
         //}
-        if (collision.gameObject.tag == "Jelly")
+        if (collision.gameObject.layer == 6)
         {
-            hp += 2;
-            count += 3;
         }
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!isDamage)
+        if(collision.gameObject.tag == "MonsterZone1")
         {
-            if (collision.gameObject.tag == "Monster")
-            {
-                PlayerDamage(1);
-            }
+            transform.position = new Vector2(0, -9);
+            collision.gameObject.SetActive(false);
+            MapManager.Instance.MonsterZone1();
         }
-        
     }
     public void PlayerDamage(int damage)
     {
@@ -136,6 +127,10 @@ public class PlayerManagerSlime : MonoBehaviour
             }
             StartCoroutine(CameraManager.instance.Shake(shakeDuration, shakeMagnitude));
             StartCoroutine(DamageDelay());
+            if(hp == 0)
+            {
+                UIManager.instance.OnRestart();
+            }
         }
     }
     public IEnumerator DamageDelay()

@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class MapManager : MonoBehaviour
 {
+    public static MapManager Instance;
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    public GameObject monsterZone1;
+    public bool isMonsterZone1 = false;
+    public GameObject[] zone1Monsters;
     Camera mainCam;
     Vector3 defaltPosi;
     int xSize = 13;
@@ -37,6 +52,25 @@ public class MapManager : MonoBehaviour
                 PlayerMoveMap(false, -ySize);
             }
         }      
+        if(isMonsterZone1)
+        {
+            if (zone1Monsters[0].tag == "Jelly" &&
+                zone1Monsters[1].tag == "Jelly" &&
+                zone1Monsters[2].tag == "Jelly")
+            {
+                monsterZone1.SetActive(false);
+                isMonsterZone1 = false;
+            }
+        }
+    }
+    public void MonsterZone1()
+    {
+        for (int i = 0; i < zone1Monsters.Length; i++)
+        {
+            zone1Monsters[i].gameObject.SetActive(true);
+        }
+        monsterZone1.SetActive(true);
+        isMonsterZone1 = true;
     }
     void PlayerMoveMap(bool XY,int plusMinus)
     {

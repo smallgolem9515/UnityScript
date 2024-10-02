@@ -54,7 +54,6 @@ public class Particlemanager : MonoBehaviour
     IEnumerator DestroyParticleAnimation(GameObject particle,Animator animator)
     {
         float animationLength = animator.GetCurrentAnimatorStateInfo(0).length;
-        Debug.Log(animationLength);
         yield return new WaitForSeconds(animationLength);
 
         Destroy(particle);

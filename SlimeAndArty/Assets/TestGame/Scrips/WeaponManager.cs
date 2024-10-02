@@ -29,6 +29,7 @@ public class WeaponManager : MonoBehaviour
     public bool isFire = true; //총을 쏘는 여부
     //bool형의 이름은 is,be,on등이있는데 is를 추천
     private float delayTime = 0.1f;
+    public bool isShotDamage = false;
 
     [Header("ObjectPool")]
     public int poolSize = 100; //오브젝트 풀링 사이즈
@@ -135,7 +136,7 @@ public class WeaponManager : MonoBehaviour
         rayDirection = (mousePos - bulletPos[0].position).normalized;
 
         // RaycastHit2D는 레이가 충돌한 오브젝트의 정보를 담습니다.
-        RaycastHit2D hit = Physics2D.Raycast(bulletPos[0].position, rayDirection, rayDistance);
+        RaycastHit2D hit = Physics2D.Raycast(bulletPos[0].position, rayDirection, rayDistance,targetLayer);
 
         // 레이가 무언가에 충돌했다면
         if (hit.collider)
@@ -143,11 +144,11 @@ public class WeaponManager : MonoBehaviour
             Debug.DrawRay(bulletPos[0].position, rayDirection * rayDistance, Color.black);
             // 충돌한 오브젝트의 이름 출력
             Debug.Log("충돌한 오브젝트: " + hit.collider.name);
+            isShotDamage = true;
         }
         // 디버그용 레이 시각화 (Scene 창에서 레이 경로를 확인)
         Debug.DrawRay(bulletPos[0].position, rayDirection * rayDistance, Color.red,0.2f);
         ParticleManager.instance.PlayParticle("FireEffect", bulletPos[0].position);
-        Debug.Log("파티클");
         GameObject bullet = GetBulletFromPool();
         if (bullet != null)
         {
@@ -156,6 +157,7 @@ public class WeaponManager : MonoBehaviour
             bullet.SetActive(true);
         }
         Soundsmanager.Instance.PlaySFX("Pistol");
+        
     }
     void FireShotGun()
     {
@@ -217,6 +219,7 @@ public class WeaponManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         isFire = true;
+        isShotDamage = false;
     }
     void OnEKey()
     {
