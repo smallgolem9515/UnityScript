@@ -63,13 +63,24 @@ public class UIManager : MonoBehaviour
     }
     public IEnumerator EmptyHeart(int hp)
     {
-        heartObj[hp].SetActive(false);
-        GameObject heart = Instantiate(damagedHeartPrefeb, heartObj[hp].transform.position, Quaternion.identity);
-        heart.GetComponent<Animator>().Play("EmptyHeartAni");
-        yield return new WaitForSeconds(0.3f);
-        Destroy(heart);
-        heartObj[hp].SetActive(true);
-        heartObj[hp].GetComponent<Image>().sprite = emptyHeart;
+        if(hp != 0)
+        {
+            heartObj[hp].SetActive(false);
+            GameObject heart = Instantiate(damagedHeartPrefeb, heartObj[hp].transform.position, Quaternion.identity);
+            heart.GetComponent<Animator>().Play("EmptyHeartAni");
+            yield return new WaitForSeconds(0.3f);
+            Destroy(heart);
+            heartObj[hp].SetActive(true);
+            heartObj[hp].GetComponent<Image>().sprite = emptyHeart;
+        }
+        
+    }
+    public void HeartUIRecovery()
+    {
+        for (int i = 0; i < PlayerManagerSlime.instance.maxHP/2; i++)
+        {
+              heartObj[i].GetComponent<Image>().sprite = fullHeart;
+        }
     }
     void OnPauseMenu()
     {
@@ -82,14 +93,14 @@ public class UIManager : MonoBehaviour
             OnContinue();
         }
     }
-    void PauseGame()
+    public void PauseGame()
     {
         isPasue = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         Debug.Log("PauseMenu");
     }
-    void OnContinue()
+    public void OnContinue()
     {
         isPasue=false;
         pauseMenu.SetActive(false);
@@ -101,10 +112,11 @@ public class UIManager : MonoBehaviour
         isPasue = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+        PlayerManagerSlime.instance.Respon();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         Debug.Log("ReStart");
     }
-    void OnQuit()
+    public void OnQuit()
     {
         Debug.Log("Quit");
         Application.Quit();

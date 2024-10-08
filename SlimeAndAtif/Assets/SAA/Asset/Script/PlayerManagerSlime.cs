@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class PlayerManagerSlime : MonoBehaviour
 {
     public static PlayerManagerSlime instance;
@@ -18,7 +19,7 @@ public class PlayerManagerSlime : MonoBehaviour
     public bool isClear = false;
     public bool isDamage = false;
     public bool isFire = true;
-
+    public bool isTrapFalse = false;
     [Header("외부 참조")]
     public GameObject bulletObj;
     Vector3 moveInput;
@@ -33,6 +34,7 @@ public class PlayerManagerSlime : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -45,7 +47,7 @@ public class PlayerManagerSlime : MonoBehaviour
         count = maxCount;
         animator = GetComponent<Animator>();
         rig2D = GetComponent<Rigidbody2D>();
-        
+        SceneController.instance.OnSceneLoaded("Field");  
     }
 
     // Update is called once per frame
@@ -89,8 +91,16 @@ public class PlayerManagerSlime : MonoBehaviour
                 isFire = false;
                 StartCoroutine(FireDelay(delayTime));
                 animator.SetTrigger("isFireTrigger");
+                SoundManager.instance.PlaySFX("SlimeAttack");
             }
         }
+    }
+    public void Respon()
+    {
+        hp = maxHP;
+        count = maxCount;
+        transform.position = Vector3.zero;
+        UIManager.instance.HeartUIRecovery();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -106,9 +116,52 @@ public class PlayerManagerSlime : MonoBehaviour
     {
         if(collision.gameObject.tag == "MonsterZone1")
         {
-            transform.position = new Vector2(0, -9);
+            transform.position = new Vector2(transform.position.x, -9);
             collision.gameObject.SetActive(false);
-            MapManager.Instance.MonsterZone1();
+            MapManager.Instance.MonsterZone(1);
+        }
+        else if (collision.gameObject.tag == "MonsterZone2")
+        {
+            transform.position = new Vector2(-14.5f, transform.position.y);
+            collision.gameObject.SetActive(false);
+            MapManager.Instance.Zone2.SetActive(true);
+        }
+        else if (collision.gameObject.tag == "MonsterZone4")
+        {
+            transform.position = new Vector2(transform.position.x, -33);
+            collision.gameObject.SetActive(false);
+            MapManager.Instance.MonsterZone(4);
+            SoundManager.instance.PlaySFX("WolfFear");
+        }
+        if(collision.gameObject.name == "Button")
+        {
+            SoundManager.instance.PlaySFX("ButtonClick");
+            isTrapFalse = true;
+            MapManager.Instance.Zone2.SetActive(false);
+        }
+        if(collision.gameObject.tag == "Trap")
+        {
+            PlayerDamage(1);
+        }
+        if (collision.gameObject.tag == "TrapDoor")
+        {
+            SceneManager.LoadScene("Clear");
+            SceneController.instance.OnSceneLoaded("Clear");
+        }
+        if(collision.gameObject.layer == 8)
+        {
+            SoundManager.instance.PlaySFX("ItemGet");
+            if(collision.gameObject.name == "Sword")
+            {
+                playerAttackPower *= 2;
+                collision.gameObject.SetActive(false);
+            }
+            else if(collision.gameObject.name == "Heart")
+            {
+                hp = maxHP;
+                UIManager.instance.HeartUIRecovery();
+                collision.gameObject.SetActive(false);
+            }
         }
     }
     public void PlayerDamage(int damage)
@@ -125,6 +178,7 @@ public class PlayerManagerSlime : MonoBehaviour
             {
                 StartCoroutine(UIManager.instance.HalfHeart(hp / 2));
             }
+            SoundManager.instance.PlaySFX("SlimeDamage");
             StartCoroutine(CameraManager.instance.Shake(shakeDuration, shakeMagnitude));
             StartCoroutine(DamageDelay());
             if(hp == 0)

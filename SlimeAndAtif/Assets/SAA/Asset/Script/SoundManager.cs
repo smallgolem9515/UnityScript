@@ -119,9 +119,9 @@ public class SoundManager : MonoBehaviour
 
         for(float t = 0;t < duration;t += Time.deltaTime)
         {
-            BGMaudioSource.volume = Mathf.Lerp(startVolume, 1f, t / duration);
+            BGMaudioSource.volume = Mathf.Lerp(startVolume, 0.2f, t / duration);
             yield return null;
         }
-        BGMaudioSource.volume=1f;
+        BGMaudioSource.volume=0.2f;
     }
 }

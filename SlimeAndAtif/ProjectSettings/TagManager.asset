@@ -8,6 +8,11 @@ TagManager:
   - Jelly
   - Monster
   - MonsterZone1
+  - MonsterZone2
+  - MonsterZone3
+  - MonsterZone4
+  - Trap
+  - TrapDoor
   layers:
   - Default
   - TransparentFX
@@ -17,7 +22,7 @@ TagManager:
   - UI
   - Jellyed
   - Bullet
-  - 
+  - Item
   - 
   - 
   - 
