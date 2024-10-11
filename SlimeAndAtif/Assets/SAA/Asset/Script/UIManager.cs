@@ -113,7 +113,7 @@ public class UIManager : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         PlayerManagerSlime.instance.Respon();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("GameScene");
         Debug.Log("ReStart");
     }
     public void OnQuit()

@@ -26,12 +26,12 @@ public class MonsterManager : MonoBehaviour
     public bool isDamage = false;
     public float moveSpeed = 2.0f;
     Animator animator;
-    Sprite Sprite;
+    SpriteRenderer spriteRenderer;
     State currentState;
     Monster currentMonster;
     void Start()
     {
-        Sprite = GetComponent<Sprite>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         currentState = State.Moving;
         playerPosition = PlayerManagerSlime.instance.transform;
@@ -41,17 +41,15 @@ public class MonsterManager : MonoBehaviour
     void Update()
     {
         float distanceToTarget = Vector3.Distance(transform.position,playerPosition.position);
-        
-        Debug.Log(distanceToTarget);
         if (hp > 0 && currentState == State.Moving)
         {
             if (transform.position.x < playerPosition.position.x)
             {
-                transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, 1);
+                spriteRenderer.flipX = true;
             }
             else
             {
-                transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, 1);
+                spriteRenderer.flipX = false;
             }
             if (distanceToTarget > attackRange)
             {
