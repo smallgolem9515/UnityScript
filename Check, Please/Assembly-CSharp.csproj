@@ -66,12 +66,17 @@
     <Compile Include="Assets\Asset\Animation\Kevin Iglesias\Basic Motions\_ExampleScene\Scripts\RPMaterialLoader.cs" />
     <Compile Include="Assets\Asset\Weapons\Low Poly Guns\Scripts\GunView.cs" />
     <Compile Include="Assets\Asset\Player\Military\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
+    <Compile Include="Assets\Study\StudyPlayerManager.cs" />
+    <Compile Include="Assets\Study\StudySoundManager.cs" />
     <Compile Include="Assets\Asset\Weapons\Low Poly Guns\Scripts\GunsMenu.cs" />
+    <Compile Include="Assets\Asset\Animation\Soldier Animations\Scripts\SoldierHandsIK\SoldierHandsIK.cs" />
     <Compile Include="Assets\Asset\Player\Military\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Asset\Animation\BattleRoyaleHeroesPBR\SRP\HowToTestSRPs.txt" />
     <None Include="Assets\Asset\Player\Military\StarterAssets\license.txt" />
     <None Include="Assets\Asset\Items\Survival Tools\ReadMe\ReadMe.txt" />
+    <None Include="Assets\Asset\Animation\BattleRoyaleHeroesPBR\Shader\PBRMaskTint.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
