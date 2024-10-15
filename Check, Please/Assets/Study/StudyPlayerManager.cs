@@ -8,7 +8,9 @@ using UnityEngine.UIElements;
 public class StudyPlayerManager : MonoBehaviour
 {
     [Header("-----PlayerMove-----")]
-    public float playerSpeed = 3f;
+    float playerSpeedWalk = 5f; //걷는 속도
+    float playerSpeedRun = 10f; //달리기 속도
+    public float currentSpeed = 1f; //변경 속도
     float gravity = -9.81f; //중력 - 기본적인 유니티에서의 중력
     Vector3 velocity; //현재 속도 저장
     CharacterController characterController; //리지드바디는 3D에서 이런저런 문제가 있어서 캐릭터 컨트롤러를 사용한다.
@@ -44,9 +46,17 @@ public class StudyPlayerManager : MonoBehaviour
     public float jumpHeight = 2f; //점프 높이
     bool isGround; //땅에 충돌 여부
     public LayerMask groundLayer;
+
+    Animator animator;
+    float horizontal;
+    float vertical;
+    public Transform footPosition;
+    RaycastHit hit;
+
     private void Start()
     {
         characterController = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
 
         UnityEngine.Cursor.lockState = CursorLockMode.Locked; //커서 안보이게 설정
         currentDistance = thirdPersonDistance; //초기 카메라 거리를 설정
@@ -54,9 +64,35 @@ public class StudyPlayerManager : MonoBehaviour
         targetFov = defaultFov; //초기 Fov 설정
         mainCamera = cameraTransform.GetComponent<Camera>();
         mainCamera.fieldOfView = defaultFov; //기본 Fov설정
+
+        currentSpeed = playerSpeedWalk;
     }
     private void Update()
     {
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+
+        animator.SetFloat("Horizontal",horizontal);
+        animator.SetFloat("Vertical",vertical);
+
+        if (Input.GetKey(KeyCode.LeftShift)) //애니메이션을 통한 달리기 구현
+        {
+            animator.SetBool("isRun",true);
+            currentSpeed = playerSpeedRun;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            animator.SetBool("isRun",false);
+            currentSpeed = playerSpeedWalk;
+        }
+        bool isMoving = characterController.velocity.magnitude > 0.1f;
+            Debug.DrawRay(footPosition.position, Vector3.down * 0.2f, Color.red);
+        if (horizontal != 0 || vertical != 0)
+        {
+            StartCoroutine(FootStepSound());
+        }
+        
+
         if (Input.GetKeyDown(KeyCode.V)) //V키로 1인칭/3인칭 전환
         {
             isFirstPerson = !isFirstPerson;
@@ -83,31 +119,52 @@ public class StudyPlayerManager : MonoBehaviour
 
     }
 
+    IEnumerator FootStepSound()
+    {
+        
+        if (Physics.Raycast(footPosition.position, Vector3.down, out hit, 0.2f, groundLayer)) ;
+        {
+            if (hit.collider == null)
+            {
 
+            }
+            else
+            {
+                
+                if (hit.collider.tag == "Metal")
+                {
+                    StudySoundManager.Instance.PlaySFX("MetalFootStep");
+                }
+                else if (hit.collider.tag == "Snow")
+                {
+                    StudySoundManager.Instance.PlaySFX("SnowFootStep");
+                }
+                else
+                {
+                    StudySoundManager.Instance.PlaySFX("DefaltFootStep");
+                }
+            }
+
+        }
+        yield return new WaitForSeconds(1.0f);
+    }
     void FirstPersonMovement() //1인칭
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
         Vector3 move = transform.right * horizontal + transform.forward * vertical;
-        characterController.Move(move * playerSpeed * Time.deltaTime);
+        characterController.Move(move * currentSpeed * Time.deltaTime);
         mainCamera.transform.position = playerHead.position;
     }
     void ThirdPersonMovement() //3인칭
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
         Vector3 move = transform.right * horizontal + transform.forward * vertical + transform.up * velocity.y;
-        characterController.Move(move * playerSpeed * Time.deltaTime);
+        characterController.Move(move * currentSpeed * Time.deltaTime);
         if(rotaterAroundPlayer)
         {
             UpdateCameraPosition();
         }
         else
         {
-            UpdateCameraPositionRotater();
-            
+            UpdateCameraPositionRotater();    
         }
     }
     void updateCameraRotation()//카메라 회전
