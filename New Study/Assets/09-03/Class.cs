@@ -8,25 +8,6 @@ public class Class : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //Dictionary<string, int> stock = new Dictionary<string, int>() { { "apple", 50 }, { "banana", 30 }, { "orange", 40 } };
         //stock["banana"] += 10;
         //Debug.Log(stock["banana"]);
